@@ -58,6 +58,33 @@
 .pf-msg b { font-weight: 800; }
 .pf-msg--code { font-size: .8125rem; color: #CBD5E1; }
 
+/* Atendimento com IA: conversas reais gravadas, estáticas (sem campo de texto). Lado a lado no computador; no
+   celular e no tablet, abas (com JS) ou as três empilhadas (sem JS). */
+.ic--xs { width: 16px; height: 16px; }
+.pf-ai { display: grid; gap: 24px; margin-top: 28px; }
+@media (min-width: 1000px) { .pf-ai { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; } }
+.pf-ai__card { min-width: 0; background: #0B1120; border: 1px solid var(--border); border-radius: 20px; box-shadow: 0 24px 60px rgba(0, 0, 0, .4); overflow: hidden; }
+.pf-ai__title { margin: 0; padding: 12px 16px; font-size: 1rem; background: var(--surface); border-bottom: 1px solid var(--border); }
+.pf-ai__log { list-style: none; margin: 0; padding: 14px 12px 18px; display: flex; flex-direction: column; gap: 8px; font-size: .9375rem; line-height: 1.45; }
+.pf-ai .pf-msg { max-width: 90%; }
+.pf-msg--sys { background: #131C2E; border: 1px solid var(--control); }
+.pf-msg__tag { display: block; margin-bottom: 2px; font-size: .875rem; color: var(--muted); }
+.pf-msg__choice { color: #BAE6FD; }
+.pf-ai__step { display: flex; align-items: flex-start; gap: 6px; padding: 0 4px; font-size: .875rem; line-height: 1.4; color: var(--muted); }
+.pf-ai__step .ic { margin-top: 1px; }
+.pf-ai__btns { list-style: none; padding: 0; margin: 8px 0 2px; display: grid; gap: 6px; white-space: normal; }
+.pf-ai__btns li { padding: 7px 10px; text-align: center; border-radius: 10px; border: 1px solid var(--control); background: #0F172A; color: var(--blue-text); font-weight: 800; cursor: default; }
+.pf-ai__seal { margin: 18px 0 0; color: var(--muted); }
+.pf-ai__tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.pf-ai__tab { min-height: 48px; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--control); background: var(--surface); color: var(--text); font: 800 .9375rem var(--font); cursor: pointer; }
+.pf-ai__tab[aria-selected="true"] { border: 2px solid var(--blue-text); background: rgba(255, 255, 255, .06); }
+.pf-ai__tabs + .pf-ai { margin-top: 16px; }
+@media (min-width: 1000px) { .pf-ai__tabs { display: none; } .pf-ai__tabs + .pf-ai { margin-top: 28px; } }
+@media (max-width: 999px) { .pf-ai__card[data-off] { display: none; } }
+/* Entrada das mensagens uma a uma (só com JS e sem prefers-reduced-motion) */
+.pf-ai--anim .pf-ai__log > li.is-in { transition: opacity .35s ease, transform .35s ease; }
+.pf-ai--anim .pf-ai__log > li:not(.is-in) { opacity: 0; transform: translateY(6px); }
+
 /* Cotação */
 .pf-quote { max-width: 760px; margin-inline: auto; text-align: center; }
 .pf-quote .lead { margin-inline: auto; }

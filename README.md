@@ -19,6 +19,14 @@ Projeto pessoal de portfólio de Matheus Souza; o **Klipper** é a versão para 
 Vídeo completo (agendamento rápido e fechamento da comanda): [MP4](assets/app/app.mp4) · [WebM](assets/app/app.webm).
 As capturas e o vídeo mostram o app de verdade com dados fictícios.
 
+### Atendimento com IA
+
+<img src="assets/ai-demo/secao-ia-1440.jpg" width="780" alt="Três conversas reais com a IA: agendamento, dúvidas com erro de digitação e uma pergunta fora do assunto">
+
+Conversas reais gravadas com a IA em 27/10/2026, com dados fictícios. A IA conversa, mas
+horários, preços e regras vêm do sistema, e nada é gravado sem a confirmação do cliente. No site o exemplo é estático:
+não há campo de texto nem chamada a servidor.
+
 ## Principais funções
 
 - Bot no WhatsApp com IA (opcional) e menu numerado: agenda, cancela, remarca, lembra o horário e cobra o Pix

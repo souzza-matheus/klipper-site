@@ -20,6 +20,51 @@
   }));
   applyNiche(($(".niche[aria-pressed='true']") || {}).dataset?.niche || "barbershop");
 
+  // ------------------------------------------------------------ atendimento com IA: abas no celular e entrada das mensagens
+  // Sem JS as três conversas aparecem completas e empilhadas.
+  const ai = $(".pf-ai");
+  if (ai) {
+    const cards = $$(".pf-ai__card", ai);
+    const tabs = $$(".pf-ai__tab");
+    const wide = window.matchMedia("(min-width: 1000px)");
+    const played = new Set();
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function play(card) {
+      if (played.has(card)) return;
+      played.add(card);
+      $$(".pf-ai__log > li", card).forEach((li, i) => setTimeout(() => li.classList.add("is-in"), reduce ? 0 : 120 + i * 260));
+    }
+    function select(i, focus, user) {
+      tabs.forEach((t, j) => {
+        t.setAttribute("aria-selected", String(i === j));
+        t.tabIndex = i === j ? 0 : -1;
+        if (i === j) cards[j].removeAttribute("data-off"); else cards[j].setAttribute("data-off", "");
+      });
+      if (focus) tabs[i].focus();
+      if (user) play(cards[i]); // a aba fica logo acima da conversa: ela já está na tela
+
+    }
+    cards.forEach((c, i) => { c.setAttribute("role", "tabpanel"); c.setAttribute("aria-labelledby", tabs[i].id); });
+    $(".pf-ai__tabs").hidden = false;
+    tabs.forEach((t, i) => {
+      t.addEventListener("click", () => select(i, false, true));
+      t.addEventListener("keydown", (e) => {
+        const k = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+        if (k) { e.preventDefault(); select((i + k + tabs.length) % tabs.length, true, true); }
+      });
+    });
+    select(0, false, false);
+    if (!reduce && "IntersectionObserver" in window) {
+      ai.classList.add("pf-ai--anim");
+      const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+        if (en.isIntersecting && (wide.matches || !en.target.hasAttribute("data-off"))) { play(en.target); io.unobserve(en.target); }
+      }), { threshold: 0.15 });
+      cards.forEach((c) => io.observe(c));
+    } else {
+      cards.forEach((c) => $$(".pf-ai__log > li", c).forEach((li) => li.classList.add("is-in")));
+    }
+  }
+
   // ------------------------------------------------------------ ampliação (dialog modal: Esc fecha, foco preso)
   const box = $(".pf-lightbox");
   if (!box) return;
