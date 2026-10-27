@@ -1,7 +1,7 @@
 {
-  "name": "SyncServ",
-  "short_name": "SyncServ",
-  "description": "Projeto de portfólio: agendamento pelo WhatsApp e gestão.",
+  "name": "Klipper",
+  "short_name": "Klipper",
+  "description": "Klipper, uma edição SyncServ: agendamento pelo WhatsApp para barbearias.",
   "lang": "pt-BR",
   "start_url": "./",
   "display": "browser",

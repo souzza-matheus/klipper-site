@@ -3,30 +3,31 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>SyncServ | Projeto de portfólio: agendamento pelo WhatsApp e gestão</title>
-<meta content="Projeto de portfólio de Matheus Souza: robô de agendamento pelo WhatsApp com IA e sistema de gestão para barbearias, salões, pet shops, clínicas e estúdios. Agenda, comanda, estoque, Pix com leitura de comprovante, app offline e versão web, com capturas reais." name="description"/>
-<link href="https://souzza-matheus.github.io/klipper-site/" rel="canonical"/>
-<meta content="#0F172A" name="theme-color"/>
-<meta content="index, follow" name="robots"/>
 <meta content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
 <meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Klipper | Agendamento pelo WhatsApp para barbearias</title>
+<meta content="Klipper, uma edição SyncServ para barbearias: o cliente marca, remarca e paga o Pix pelo WhatsApp, e você acompanha agenda, comanda e caixa num só app. Projeto autoral em fase de piloto." name="description"/>
+<link href="https://souzza-matheus.github.io/klipper-site/" rel="canonical"/>
+<meta content="dark light" name="color-scheme"/>
+<meta content="#0F172A" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="#F8FAFC" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="index, follow" name="robots"/>
 
 <meta content="website" property="og:type"/>
 <meta content="pt_BR" property="og:locale"/>
-<meta content="SyncServ" property="og:site_name"/>
-<meta content="SyncServ | Projeto de portfólio: agendamento pelo WhatsApp e gestão" property="og:title"/>
-<meta content="Projeto de portfólio de Matheus Souza: robô de agendamento pelo WhatsApp com IA e sistema de gestão para barbearias, salões, pet shops, clínicas e estúdios. Agenda, comanda, estoque, Pix com leitura de comprovante, app offline e versão web, com capturas reais." property="og:description"/>
+<meta content="Klipper" property="og:site_name"/>
+<meta content="Klipper | Sua barbearia agenda pelo WhatsApp" property="og:title"/>
+<meta content="O cliente marca, remarca e paga o Pix pela conversa; você acompanha agenda, comanda e caixa num só app. Projeto autoral em fase de piloto." property="og:description"/>
 <meta content="https://souzza-matheus.github.io/klipper-site/" property="og:url"/>
 <meta content="https://souzza-matheus.github.io/klipper-site/assets/app/og-1200x630.jpg" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="Versão web do SyncServ: a tela Hoje com dados fictícios" property="og:image:alt"/>
+<meta content="Versão web do sistema: a tela Hoje com dados fictícios" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="SyncServ | Projeto de portfólio: agendamento pelo WhatsApp e gestão" name="twitter:title"/>
-<meta content="Projeto de portfólio de Matheus Souza: robô de agendamento pelo WhatsApp com IA e sistema de gestão para barbearias, salões, pet shops, clínicas e estúdios. Agenda, comanda, estoque, Pix com leitura de comprovante, app offline e versão web, com capturas reais." name="twitter:description"/>
+<meta content="Klipper | Sua barbearia agenda pelo WhatsApp" name="twitter:title"/>
+<meta content="O cliente marca, remarca e paga o Pix pela conversa; você acompanha agenda, comanda e caixa num só app." name="twitter:description"/>
 <meta content="https://souzza-matheus.github.io/klipper-site/assets/app/og-1200x630.jpg" name="twitter:image"/>
-
 <link href="assets/favicon.ico" rel="icon" sizes="any"/>
 <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="assets/apple-touch-icon-180.png" rel="apple-touch-icon"/>
@@ -40,12 +41,12 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "SyncServ",
+  "name": "Klipper",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Android, iOS, Web",
   "url": "https://souzza-matheus.github.io/klipper-site/",
   "image": "https://souzza-matheus.github.io/klipper-site/assets/app/og-1200x630.jpg",
-  "description": "Agendamento pelo WhatsApp para barbearias, salões de beleza, pet shops, clínicas e estúdios: robô que agenda 24 horas, lembretes, Pix direto na conta do negócio, comanda e caixa, estoque, pacotes, clube de assinatura, sinal contra faltas, lista de espera, equipe com permissões, app que funciona sem internet e versão web.",
+  "description": "Agendamento pelo WhatsApp e gestão (agenda, comanda e caixa) para barbearias. Edição para barbearias da plataforma SyncServ, em fase de piloto.",
   "inLanguage": "pt-BR",
   "author": {
     "@type": "Person",
@@ -54,54 +55,47 @@
 }
 </script>
 
-<link href="styles.css?v=e4506690d2" rel="stylesheet"/>
-<link href="portfolio.css?v=16ae0bf10d" rel="stylesheet"/>
+<link href="styles.css?v=ef00fd88c0" rel="stylesheet"/>
 </head>
 <body>
 
 <svg aria-hidden="true" class="sprite" focusable="false" height="0" width="0">
 <defs>
-<symbol id="i-clock" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></symbol>
-<symbol id="i-pix" viewbox="0 0 24 24"><path d="M12 3l9 9-9 9-9-9z"></path><path d="M8.5 12h7M12 8.5v7"></path></symbol>
-<symbol id="i-bell" viewbox="0 0 24 24"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></symbol>
 <symbol id="i-chat" viewbox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8 9.5h8M8 12.5h5"></path></symbol>
-<symbol id="i-star" viewbox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"></path></symbol>
-<symbol id="i-phone" viewbox="0 0 24 24"><rect height="19" rx="2.5" width="11" x="6.5" y="2.5"></rect><path d="M10.5 18.5h3"></path></symbol>
-<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></symbol>
-<symbol id="i-chart" viewbox="0 0 24 24"><path d="M4 20V4M4 20h16"></path><path d="M8 16v-4M12 16V8M16 16v-6"></path></symbol>
-<symbol id="i-users" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"></path></symbol>
-<symbol id="i-calendar" viewbox="0 0 24 24"><rect height="15.5" rx="2" width="17" x="3.5" y="5"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></symbol>
-<symbol id="i-qr" viewbox="0 0 24 24"><rect height="6" rx="1" width="6" x="3.5" y="3.5"></rect><rect height="6" rx="1" width="6" x="14.5" y="3.5"></rect><rect height="6" rx="1" width="6" x="3.5" y="14.5"></rect><path d="M14.5 14.5h2v2h-2zM18.5 18.5h2v2h-2zM18.5 14.5h2M14.5 18.5v2"></path></symbol>
+<symbol id="i-layers" viewbox="0 0 24 24"><path d="M12 3l9 4.5-9 4.5-9-4.5z"></path><path d="M3 12l9 4.5 9-4.5M3 16.5L12 21l9-4.5"></path></symbol>
+<symbol id="i-offline" viewbox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M9 16a4.5 4.5 0 0 1 6 0"></path><circle cx="12" cy="19.5" r=".8"></circle><path d="M3 3l18 18"></path></symbol>
 <symbol id="i-check" viewbox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"></path></symbol>
 <symbol id="i-x" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></symbol>
 <symbol id="i-menu" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
-<symbol id="i-arrow" viewbox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"></path></symbol>
-<symbol id="i-mail" viewbox="0 0 24 24"><rect height="13" rx="2" width="18" x="3" y="5.5"></rect><path d="M3.5 7l8.5 6 8.5-6"></path></symbol>
-<symbol id="i-send" viewbox="0 0 24 24"><path d="M4 12l16-8-6 16-2.5-6.5z"></path><path d="M11.5 13.5L20 4"></path></symbol>
 <symbol id="i-refresh" viewbox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7"></path><path d="M20 4v7h-7"></path></symbol>
-<symbol id="i-receipt" viewbox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"></path><path d="M9 8h6M9 12h6M9 16h3"></path></symbol>
-<symbol id="i-box" viewbox="0 0 24 24"><path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z"></path><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9"></path></symbol>
-<symbol id="i-layers" viewbox="0 0 24 24"><path d="M12 3l9 4.5-9 4.5-9-4.5z"></path><path d="M3 12l9 4.5 9-4.5M3 16.5L12 21l9-4.5"></path></symbol>
-<symbol id="i-repeat" viewbox="0 0 24 24"><path d="M4 11V9a3 3 0 0 1 3-3h12M16 3l3 3-3 3"></path><path d="M20 13v2a3 3 0 0 1-3 3H5M8 21l-3-3 3-3"></path></symbol>
-<symbol id="i-lock" viewbox="0 0 24 24"><rect height="10" rx="2" width="15" x="4.5" y="10.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path><path d="M12 14.5v2"></path></symbol>
-<symbol id="i-list" viewbox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"></path><circle cx="4.5" cy="6" r="1"></circle><circle cx="4.5" cy="12" r="1"></circle><circle cx="4.5" cy="18" r="1"></circle></symbol>
+<symbol id="i-search" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></symbol>
+<symbol id="i-gear" viewbox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></symbol>
+<symbol id="i-shield" viewbox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></symbol>
+<symbol id="i-lock" viewbox="0 0 24 24"><rect height="10" rx="2" width="15" x="4.5" y="10.5"></rect><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"></path></symbol>
+<symbol id="i-pix" viewbox="0 0 24 24"><path d="M12 3l9 9-9 9-9-9z"></path><path d="M8.5 12h7M12 8.5v7"></path></symbol>
 <symbol id="i-id" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><circle cx="9" cy="11" r="2.5"></circle><path d="M5.5 16.5a3.5 3.5 0 0 1 7 0M15 10h3M15 13.5h3"></path></symbol>
-<symbol id="i-offline" viewbox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M9 16a4.5 4.5 0 0 1 6 0"></path><circle cx="12" cy="19.5" r=".8"></circle><path d="M3 3l18 18"></path></symbol>
-<symbol id="i-monitor" viewbox="0 0 24 24"><rect height="12.5" rx="2" width="19" x="2.5" y="4"></rect><path d="M8 20.5h8M12 16.5v4"></path></symbol>
+<symbol id="i-minus" viewbox="0 0 24 24"><path d="M6 12h12"></path></symbol>
+<symbol id="i-plus" viewbox="0 0 24 24"><path d="M6 12h12M12 6v12"></path></symbol>
 </defs>
 </svg>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a><aside aria-label="Aviso" class="pf-notice"><p>Projeto de portfólio. As imagens mostram o app com dados fictícios.</p></aside>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="topbar">
 <div class="wrap topbar__in">
-<a aria-label="SyncServ, voltar ao início" class="topbar__logo" href="#topo">
-<img alt="SyncServ" height="44" src="assets/syncserv-logo.svg" width="130"/>
+<a class="brand" href="#topo">
+<img alt="" class="brand__mark" height="28" src="assets/nichos/barbearia.svg" width="28"/>
+<span class="brand__text"><span class="brand__name">Klipper</span><span class="sr-only">, </span><span class="brand__by">uma edição SyncServ</span></span>
 </a>
-<a class="btn btn--cta btn--sm js-cta topbar__cta" data-msg="trial" href="#cotacao">Pedir cotação</a>
-<button aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" class="menu-btn" type="button">
+<nav aria-label="Seções da página" class="nav" id="menu">
+<a href="#demonstracao">Demonstração</a>
+<a href="#funcionalidades">Funcionalidades</a>
+<a href="#telas">Telas</a>
+<a href="#duvidas">Dúvidas</a>
+</nav>
+<a class="btn btn--primary btn--sm js-quote topbar__cta" href="https://wa.me/5531995887186?text=Ol%C3%A1%21%20Vi%20o%20Klipper%20e%20quero%20uma%20cota%C3%A7%C3%A3o%20para%20a%20minha%20barbearia." rel="noopener" target="_blank">Pedir cotação</a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" class="btn btn--icon menu-btn" type="button">
 <svg aria-hidden="true" class="ic"><use href="#i-menu"></use></svg>
 </button>
-<nav aria-label="Seções da página" class="nav" id="menu"><a href="#app">Veja o app</a><a href="#como-funciona">Como funciona</a><a href="#gestao">Gestão</a><a href="#sobre">Sobre o projeto</a><a href="#duvidas">Dúvidas</a><a class="btn btn--cta btn--sm js-cta" href="#cotacao">Pedir cotação</a></nav>
 </div>
 </header>
 <main id="conteudo">
@@ -109,52 +103,228 @@
 <section aria-labelledby="hero-title" class="hero" id="topo">
 <div class="wrap hero__grid">
 <div class="hero__text">
-<p class="badge">Agendamento pelo WhatsApp</p>
-<h1 id="hero-title">Sua agenda cheia e seu WhatsApp <span class="hl">no automático.</span></h1>
-<p class="lead">O robô agenda, lembra o horário e manda o Pix da sua chave pelo WhatsApp. Você acompanha tudo no app, no celular ou no computador.</p>
+<p class="seal seal--status">Projeto autoral em fase de piloto</p>
+<h1 id="hero-title">Sua barbearia agenda pelo WhatsApp, sem você parar o corte para responder.</h1>
+<p class="lead">O cliente marca, remarca e paga o Pix pela conversa; você acompanha agenda, comanda e caixa num só app.</p>
 <div class="actions">
-<a class="btn btn--cta js-cta" data-msg="trial" href="#cotacao">Pedir cotação</a>
-<a class="btn btn--ghost" href="#app">Veja o app funcionando <svg aria-hidden="true" class="ic ic--sm"><use href="#i-arrow"></use></svg>
-</a>
+<a class="btn btn--primary" href="#demonstracao">Ver a demonstração</a>
+<a class="btn btn--secondary js-quote" href="https://wa.me/5531995887186?text=Ol%C3%A1%21%20Vi%20o%20Klipper%20e%20quero%20uma%20cota%C3%A7%C3%A3o%20para%20a%20minha%20barbearia." rel="noopener" target="_blank">Pedir cotação</a>
+</div>
 </div>
 
+<figure class="showpiece">
+<div class="frame frame--browser showpiece__web">
+<div aria-hidden="true" class="frame__bar"><span class="frame__dots"><i></i><i></i><i></i></span></div>
+
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 767px) 92vw, 640px" srcset="assets/app/barbearia-claro-1440-agenda-profissionais-720.avif 720w, assets/app/barbearia-claro-1440-agenda-profissionais-1080.avif 1080w, assets/app/barbearia-claro-1440-agenda-profissionais-1440.avif 1440w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 767px) 92vw, 640px" srcset="assets/app/barbearia-claro-1440-agenda-profissionais-720.webp 720w, assets/app/barbearia-claro-1440-agenda-profissionais-1080.webp 1080w, assets/app/barbearia-claro-1440-agenda-profissionais-1440.webp 1440w" type="image/webp"/><source sizes="(max-width: 767px) 92vw, 640px" srcset="assets/app/barbearia-1440-agenda-profissionais-720.avif 720w, assets/app/barbearia-1440-agenda-profissionais-1080.avif 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 767px) 92vw, 640px" srcset="assets/app/barbearia-1440-agenda-profissionais-720.webp 720w, assets/app/barbearia-1440-agenda-profissionais-1080.webp 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.webp 1440w" type="image/webp"/><img alt="Versão web no computador: agenda de hoje com as colunas de João e Pedro lado a lado, os atendimentos marcados e os horários livres entre eles" decoding="async" fetchpriority="high" height="900" sizes="(max-width: 767px) 92vw, 640px" src="assets/app/barbearia-1440-agenda-profissionais-1080.jpg" srcset="assets/app/barbearia-1440-agenda-profissionais-720.jpg 720w, assets/app/barbearia-1440-agenda-profissionais-1080.jpg 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.jpg 1440w" width="1440"/></picture>
 </div>
-
-<div aria-label="Qual tela do app mostrar" class="phone-tabs" role="group"><button aria-pressed="true" class="phone-tab" data-show="hoje" type="button">Hoje</button><button aria-pressed="false" class="phone-tab" data-show="agenda" type="button">Agenda</button></div>
-<div class="phones pf-hero-shots" data-show="hoje"><div class="pf-phone--hoje"><div class="pf-t--barbershop"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/barbearia-390-hoje-390.avif 390w, assets/app/barbearia-390-hoje-585.avif 585w, assets/app/barbearia-390-hoje-780.avif 780w" type="image/avif"/><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/barbearia-390-hoje-390.webp 390w, assets/app/barbearia-390-hoje-585.webp 585w, assets/app/barbearia-390-hoje-780.webp 780w" type="image/webp"/><img alt="App do celular, tela Hoje (barbearia, tema escuro)" decoding="async" fetchpriority="high" height="1688" sizes="(max-width: 599px) 282px, 260px" src="assets/app/barbearia-390-hoje-585.jpg" srcset="assets/app/barbearia-390-hoje-390.jpg 390w, assets/app/barbearia-390-hoje-585.jpg 585w, assets/app/barbearia-390-hoje-780.jpg 780w" width="780"/></picture></div></div></div><div class="pf-t--beauty"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/salao-390-hoje-390.avif 390w, assets/app/salao-390-hoje-585.avif 585w, assets/app/salao-390-hoje-780.avif 780w" type="image/avif"/><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/salao-390-hoje-390.webp 390w, assets/app/salao-390-hoje-585.webp 585w, assets/app/salao-390-hoje-780.webp 780w" type="image/webp"/><img alt="App do celular, tela Hoje (salão de beleza, tema claro)" decoding="async" height="1688" loading="lazy" sizes="(max-width: 599px) 282px, 260px" src="assets/app/salao-390-hoje-585.jpg" srcset="assets/app/salao-390-hoje-390.jpg 390w, assets/app/salao-390-hoje-585.jpg 585w, assets/app/salao-390-hoje-780.jpg 780w" width="780"/></picture></div></div></div></div><div class="pf-phone--agenda"><div class="pf-t--barbershop"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/barbearia-390-agenda-timeline-390.avif 390w, assets/app/barbearia-390-agenda-timeline-585.avif 585w, assets/app/barbearia-390-agenda-timeline-780.avif 780w" type="image/avif"/><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/barbearia-390-agenda-timeline-390.webp 390w, assets/app/barbearia-390-agenda-timeline-585.webp 585w, assets/app/barbearia-390-agenda-timeline-780.webp 780w" type="image/webp"/><img alt="App do celular, agenda do dia (barbearia, tema escuro)" decoding="async" fetchpriority="high" height="1688" sizes="(max-width: 599px) 282px, 260px" src="assets/app/barbearia-390-agenda-timeline-585.jpg" srcset="assets/app/barbearia-390-agenda-timeline-390.jpg 390w, assets/app/barbearia-390-agenda-timeline-585.jpg 585w, assets/app/barbearia-390-agenda-timeline-780.jpg 780w" width="780"/></picture></div></div></div><div class="pf-t--beauty"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/salao-390-agenda-timeline-390.avif 390w, assets/app/salao-390-agenda-timeline-585.avif 585w, assets/app/salao-390-agenda-timeline-780.avif 780w" type="image/avif"/><source sizes="(max-width: 599px) 282px, 260px" srcset="assets/app/salao-390-agenda-timeline-390.webp 390w, assets/app/salao-390-agenda-timeline-585.webp 585w, assets/app/salao-390-agenda-timeline-780.webp 780w" type="image/webp"/><img alt="App do celular, agenda do dia (salão de beleza, tema claro)" decoding="async" height="1688" loading="lazy" sizes="(max-width: 599px) 282px, 260px" src="assets/app/salao-390-agenda-timeline-585.jpg" srcset="assets/app/salao-390-agenda-timeline-390.jpg 390w, assets/app/salao-390-agenda-timeline-585.jpg 585w, assets/app/salao-390-agenda-timeline-780.jpg 780w" width="780"/></picture></div></div></div></div></div>
-<fieldset class="niches">
-<legend>Veja nos dois temas do app:</legend>
-<div class="niches__list" role="group">
-<button aria-pressed="true" class="niche" data-niche="barbershop" type="button">
-<img alt="" aria-hidden="true" height="28" src="assets/nichos/barbearia.svg" width="28"/> Barbearia
-            </button>
-<button aria-pressed="false" class="niche" data-niche="beauty" type="button">
-<img alt="" aria-hidden="true" height="28" src="assets/nichos/beleza.svg" width="28"/> Salão de beleza
-            </button>
-
-
-
+<div class="frame frame--phone showpiece__phone">
+<div aria-label="Exemplo de conversa no WhatsApp: o cliente pede um horário de corte, o atendimento oferece os horários livres e confirma o agendamento." class="chat chat--mini js-hero-chat" role="img">
+<p aria-hidden="true" class="msg msg--client">Oi! Tem horário pra corte?</p>
+<p aria-hidden="true" class="msg msg--agent">Tem sim, com o João. Qual dia fica melhor para você?</p>
 </div>
-</fieldset>
+</div>
+<figcaption class="caption"><span class="seal">Dados fictícios</span> Conversa do cliente no celular<span class="showpiece__more"> e agenda real do sistema no computador</span>.</figcaption>
+</figure>
 </div>
 </section>
-<section aria-labelledby="app-title" class="section" id="app">
+
+<section aria-labelledby="dif-title" class="band" id="diferenciais">
 <div class="wrap">
-<h2 id="app-title">Veja o app funcionando</h2>
-<p class="muted intro">Capturas e vídeo do app de verdade, rodando com dados fictícios: a versão web no computador e o app no celular, nos temas da barbearia (escuro) e do salão de beleza (claro). Toque numa tela para ampliar.</p>
-<div class="pf-media">
-<figure>
-<div class="pf-browser">
-<div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">SyncServ · versão web</span></div>
-<video aria-describedby="video-cap" class="pf-video" controls="" height="800" playsinline="" poster="assets/app/poster-1280.jpg" preload="none" width="1280">
-<source src="assets/app/app.webm" type="video/webm"/>
-<source src="assets/app/app.mp4" type="video/mp4"/>
-</video>
+<h2 class="sr-only" id="dif-title">O que muda em relação a uma agenda online comum</h2>
+<ul class="diffs">
+<li>
+<svg aria-hidden="true" class="ic"><use href="#i-chat"></use></svg>
+<div><h3>Atende no WhatsApp que o cliente já usa</h3><p>Sem app para baixar nem link para abrir: o cliente marca, remarca e paga pela conversa.</p></div>
+</li>
+<li>
+<svg aria-hidden="true" class="ic"><use href="#i-layers"></use></svg>
+<div><h3>Agenda, comanda e caixa no mesmo lugar</h3><p>O horário marcado vira comanda e o pagamento cai no caixa do dia, sem passar nada a limpo.</p></div>
+</li>
+<li>
+<svg aria-hidden="true" class="ic"><use href="#i-offline"></use></svg>
+<div><h3>Funciona na barbearia mesmo com a internet caindo</h3><p>No app do celular, agenda e comanda continuam funcionando sem conexão e sincronizam quando ela volta. <a href="#offline">O que precisa de internet</a></p></div>
+</li>
+</ul>
 </div>
-<figcaption class="small muted" id="video-cap">Vídeo sem som (23 s): agendamento rápido num horário vago da agenda e fechamento da comanda com produto, recebendo no Pix.</figcaption>
+</section>
+
+<section aria-labelledby="demo-title" class="section" id="demonstracao">
+<div class="wrap">
+<h2 id="demo-title">Experimente marcar um horário</h2>
+<p class="note">Simulação que roda só no seu navegador, com dados fictícios. No atendimento real, a mesma conversa acontece no WhatsApp da barbearia.</p>
+<div class="demo">
+<div aria-labelledby="sim-title" class="sim" role="group">
+<div class="sim__bar">
+<img alt="" decoding="async" height="32" loading="lazy" src="assets/nichos/barbearia.svg" width="32"/>
+<div><strong id="sim-title">Barbearia Demo</strong><small class="js-sim-status">online</small></div>
+<span class="seal">Dados fictícios</span>
+<button aria-label="Recomeçar a conversa" class="btn btn--icon js-sim-reset" type="button">
+<svg aria-hidden="true" class="ic"><use href="#i-refresh"></use></svg>
+</button>
+</div>
+<div aria-label="Conversa simulada" aria-live="polite" aria-relevant="additions" class="chat sim__log js-sim-log" id="sim-log" role="log" tabindex="0">
+<p class="msg msg--system">A simulação precisa de JavaScript. Sem ele, veja as conversas gravadas abaixo.</p>
+</div>
+<div aria-label="Respostas do cliente" class="sim__options js-sim-options" role="group"></div>
+</div>
+<div class="demo__side">
+<p>Toque nas respostas, como o cliente faria no WhatsApp: serviço, barbeiro, dia, horário, confirmação, Pix e lembrete. Os dias e horários seguem a data de hoje no seu aparelho.</p>
+<button aria-controls="sim-log" aria-expanded="false" class="btn btn--secondary btn--sm js-steps-toggle" type="button">Ver o que o sistema fez nesta conversa</button>
+</div>
+</div>
+
+<div aria-labelledby="ia-heading" class="ia" id="ia">
+<h3 id="ia-heading">Com o atendimento com IA <span class="tag">Opcional</span></h3>
+<p class="note">O cliente escreve do jeito dele. A IA responde dúvidas e ajuda a marcar; horários, preços e regras vêm do sistema e nada é marcado sem a confirmação do cliente. Conversas reais gravadas com a IA em 27/10/2026, com dados fictícios.</p>
+<div class="tabs" data-tabs="">
+<div aria-label="Conversas gravadas com a IA" class="tabs__list" hidden="" role="tablist"><button aria-controls="ia-conv-0" aria-selected="true" class="btn btn--tab" id="ia-tab-0" role="tab" type="button">Agendamento</button><button aria-controls="ia-conv-1" aria-selected="false" class="btn btn--tab" id="ia-tab-1" role="tab" tabindex="-1" type="button">Dúvidas</button><button aria-controls="ia-conv-2" aria-selected="false" class="btn btn--tab" id="ia-tab-2" role="tab" tabindex="-1" type="button">Fora do assunto</button></div>
+<article aria-labelledby="ia-title-0" class="conv" id="ia-conv-0">
+<header class="conv__head">
+<h4 class="conv__title" id="ia-title-0">Agendamento</h4>
+<p class="conv__when">Conversa de quarta-feira, 28/10</p>
+<span class="seal">Dados fictícios</span>
+</header>
+<ol aria-label="Conversa: Agendamento" class="chat conv__log" id="ia-log-0"><li class="msg msg--client"><span class="sr-only">Cliente: </span>quero cortar o cabelo amanhã depois das 17h com o João</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os serviços e os preços</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os profissionais e o que cada um faz</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou horários livres de corte amanhã depois das 17:00 com João (4 encontrados)</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Encontrei horários com o João amanhã após as 17h: às 17:00, 17:30, 18:00 ou 18:30. Qual deles fica melhor para você e qual é o seu nome? ✂️</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>pode ser às 17h. meu nome é Rafael</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os serviços e os preços</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os profissionais e o que cada um faz</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Salvou o nome que o cliente informou</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Pediu ao sistema o resumo para o cliente confirmar (nada gravado ainda)</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Confirma o agendamento?
+
+✂️ <b>Corte</b> com João
+📅 Amanhã (qui 29/10) às 17:00
+💰 R$ 40,00<span aria-label="Opções oferecidas" class="msg__btns"><span>Confirmar</span><span>Escolher outro horário</span><span>Desistir</span></span></li><li class="msg msg--client"><span class="sr-only">Cliente: </span>1 <span class="msg__choice">(Confirmar)</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>O sistema conferiu as regras da agenda e gravou o agendamento</span></li><li class="msg msg--system"><span class="sr-only">Sistema: </span>Agendamento confirmado</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>✅ Agendado!
+
+✂️ <b>Corte</b> com João
+📅 Amanhã (qui 29/10) às 17:00
+💰 R$ 40,00
+
+Quer adiantar o pagamento?<span aria-label="Opções oferecidas" class="msg__btns"><span>Pagar agora via Pix</span><span>Pagar na barbearia</span></span></li></ol>
+<button aria-controls="ia-log-0" aria-expanded="false" class="btn btn--secondary btn--sm js-steps-toggle" type="button">Ver o que o sistema fez nesta conversa</button>
+</article>
+<article aria-labelledby="ia-title-1" class="conv" id="ia-conv-1">
+<header class="conv__head">
+<h4 class="conv__title" id="ia-title-1">Dúvidas</h4>
+<p class="conv__when">Conversa de quarta-feira, 28/10</p>
+<span class="seal">Dados fictícios</span>
+</header>
+<ol aria-label="Conversa: Dúvidas" class="chat conv__log" id="ia-log-1"><li class="msg msg--client"><span class="sr-only">Cliente: </span>qnto ta o degrade? vcs abrem sabado?</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os serviços e os preços</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou horário de funcionamento, endereço e formas de pagamento</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>O corte custa R$ 40,00 e no sábado funcionamos das 09:00 às 12:00. Quer agendar um horário para este sábado? ✂️</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>aceita pix ou cartao?</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou horário de funcionamento, endereço e formas de pagamento</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Aceitamos Pix antecipado pelo WhatsApp! Sobre outras formas, não tenho essa informação, mas posso te transferir para a equipe se preferir. 💳</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>show, valeu</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Por nada! Se precisar agendar um horário ou tirar mais alguma dúvida, é só me chamar. 😊</li></ol>
+<button aria-controls="ia-log-1" aria-expanded="false" class="btn btn--secondary btn--sm js-steps-toggle" type="button">Ver o que o sistema fez nesta conversa</button>
+</article>
+<article aria-labelledby="ia-title-2" class="conv" id="ia-conv-2">
+<header class="conv__head">
+<h4 class="conv__title" id="ia-title-2">Fora do assunto</h4>
+<p class="conv__when">Conversa de quarta-feira, 28/10</p>
+<span class="seal">Dados fictícios</span>
+</header>
+<ol aria-label="Conversa: Fora do assunto" class="chat conv__log" id="ia-log-2"><li class="msg msg--client"><span class="sr-only">Cliente: </span>qual o melhor time do Brasil?</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Marcou a mensagem como fora do assunto</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Aqui eu só consigo ajudar com agendamentos e informações da barbearia. Quer marcar um horário?</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>kkk ta bom. tem horario pra fazer a barba hoje a tarde?</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os serviços e os preços</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou horários livres de barba hoje depois das 12:00 até as 18:00 (8 encontrados)</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Temos horários hoje à tarde para barba: às 13:00, 14:00, 14:30, 15:00 ou 15:30. Qual prefere e qual é o seu nome? ✂️</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>fechou, 13h. sou o Lucas</li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou os serviços e os preços</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Salvou o nome que o cliente informou</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Consultou horários livres de barba hoje depois das 12:00 até as 18:00 (8 encontrados)</span></li><li class="msg msg--step"><span class="sr-only">Etapa interna: </span><svg aria-hidden="true" class="ic"><use href="#i-gear"></use></svg><span>Pediu ao sistema o resumo para o cliente confirmar (nada gravado ainda)</span></li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Confirma o agendamento?
+
+✂️ <b>Barba</b> com Pedro
+📅 Hoje (qua 28/10) às 13:00
+💰 R$ 30,00<span aria-label="Opções oferecidas" class="msg__btns"><span>Confirmar</span><span>Escolher outro horário</span><span>Desistir</span></span></li></ol>
+<button aria-controls="ia-log-2" aria-expanded="false" class="btn btn--secondary btn--sm js-steps-toggle" type="button">Ver o que o sistema fez nesta conversa</button>
+</article>
+</div>
+</div>
+
+</div>
+</section>
+
+<section aria-labelledby="ben-title" class="section section--alt" id="beneficios">
+<div class="wrap">
+<h2 id="ben-title">O que muda no seu dia</h2>
+<ul class="benefits">
+<li class="card"><p class="benefit__prob">Você responde mensagem no meio do corte</p><p>As conversas de marcar, remarcar e tirar dúvida seguem sem você; depois é só olhar a agenda.</p></li>
+<li class="card"><p class="benefit__prob">O horário fica vazio quando alguém some</p><p>Quem desmarca libera o horário na hora, e quem está na fila de espera é avisado.</p></li>
+<li class="card"><p class="benefit__prob">O caixa não fecha no fim do dia</p><p>Cada atendimento termina numa comanda, e o dia já sai somado por forma de pagamento.</p></li>
+<li class="card"><p class="benefit__prob">Ninguém sabe o que o outro marcou</p><p>A equipe toda olha a mesma agenda, no celular ou no computador da recepção.</p></li>
+</ul>
+</div>
+</section>
+
+<section aria-labelledby="feat-title" class="section" id="funcionalidades">
+<div class="wrap">
+<h2 id="feat-title">Funcionalidades</h2>
+<p class="note">Cada item: o problema que resolve → como funciona.</p>
+<ul class="highlights">
+<li class="card" id="atendimento-automatico"><h3>Atendimento automático no WhatsApp</h3><p>Cliente quer marcar fora do horário → o atendimento mostra serviços, preços e horários livres e marca a qualquer hora.</p></li>
+<li class="card"><h3>Agenda por barbeiro</h3><p>Saber quem está livre sem perguntar → agenda do dia e do mês de cada barbeiro, no celular e no computador.</p></li>
+<li class="card" id="lembretes"><h3>Lembretes com confirmação</h3><p>Cliente esquece o horário → lembrete pelo WhatsApp antes do horário, com a opção de confirmar ou cancelar.</p></li>
+<li class="card" id="faltas"><h3>Menos faltas</h3><p>Falta sem aviso → sinal por Pix para segurar o horário (se você quiser) e aprovação manual para quem costuma faltar.</p></li>
+</ul>
+<div class="groups">
+<section aria-labelledby="g-atend" class="group">
+<h3 id="g-atend">Atendimento</h3>
+<ul class="feats">
+<li><h4>Lista de espera</h4><p>Dia cheio → quem quer o horário entra na fila e é avisado pelo WhatsApp quando uma vaga abre.</p></li>
+<li id="ia-recurso"><h4>Atendimento com IA <span class="tag">Opcional</span></h4><p>Cliente escreve do jeito dele → a IA responde dúvidas e ajuda a marcar; horários, preços e regras vêm do sistema e nada é marcado sem a confirmação do cliente.</p><p class="note">Precisa ser ativado pela barbearia. Desligado, o atendimento segue pelo menu numerado da demonstração.</p></li>
+<li><h4>Avisos para o dono</h4><p>Saber o que mudou sem abrir o app → novo agendamento, cancelamento e resumo do dia no seu WhatsApp.</p></li>
+<li><h4>Remarcar e cancelar pela conversa</h4><p>Cliente precisa mudar o horário → ele mesmo remarca ou cancela pelo WhatsApp, e a agenda se atualiza.</p></li>
+</ul>
+<details class="more">
+<summary>Ver todos de Atendimento</summary>
+<ul class="feats">
+<li><h4>Pesquisa de satisfação</h4><p>Saber como foi o atendimento → depois do horário, o cliente dá uma nota de 1 a 5 e pode deixar um comentário.</p></li>
+</ul>
+</details>
+</section>
+<section aria-labelledby="g-agenda" class="group">
+<h3 id="g-agenda">Agenda e equipe</h3>
+<ul class="feats">
+<li><h4>Bloqueios de horário</h4><p>Folga, almoço ou compromisso → bloqueie o horário e ele deixa de aparecer para o cliente.</p></li>
+<li><h4>Login e permissões por pessoa</h4><p>Todo mundo vendo tudo → cada pessoa entra com o próprio login; o barbeiro vê só a própria agenda e as próprias comissões.</p></li>
+<li><h4>Versão web para a recepção</h4><p>Atender no balcão pelo computador → agenda dos barbeiros lado a lado e atalhos de teclado. Precisa de internet.</p></li>
+<li id="offline"><h4>Funciona com a internet caindo</h4><p>A internet caiu no meio do dia → o app do celular continua funcionando e mostra o que falta enviar.</p>
+<div class="offline">
+<div><p class="offline__title">Funciona sem internet</p><ul><li>Ver a agenda</li><li>Abrir e fechar comanda</li><li>Registrar recebimento</li></ul></div>
+<div><p class="offline__title">Precisa de internet</p><ul><li>Mensagens do WhatsApp</li><li>Pix novo</li><li>Sincronizar com outros aparelhos</li></ul></div>
+</div>
+<p class="note">Tudo sincroniza sozinho quando a conexão volta. O atendimento pelo WhatsApp roda no servidor e não depende da internet da barbearia.</p>
+</li>
+</ul>
+</section>
+<section aria-labelledby="g-caixa" class="group">
+<h3 id="g-caixa">Caixa</h3>
+<ul class="feats">
+<li><h4>Comanda</h4><p>Conta feita na calculadora → serviços, produtos, desconto e gorjeta na mesma comanda, com pagamento dividido.</p></li>
+<li id="pix"><h4>Pix na chave da barbearia</h4><p>Conferir Pix no meio do corte → o pagamento vai direto para a chave da barbearia. O sistema confere o comprovante enviado pelo cliente, mas a confirmação final é do dono.</p></li>
+<li><h4>Comissões</h4><p>Acertar o repasse de cada barbeiro → comissão por serviço, com gorjeta e venda de produtos, a cada comanda fechada.</p></li>
+<li><h4>Despesas e relatórios</h4><p>Não saber se o mês deu lucro → faturamento, gastos e lucro por período, barbeiro e serviço, com exportação para planilha.</p></li>
+</ul>
+</section>
+<section aria-labelledby="g-clientes" class="group">
+<h3 id="g-clientes">Clientes</h3>
+<ul class="feats">
+<li><h4>Ficha e histórico</h4><p>Lembrar como cada um gosta → visitas, faltas, total gasto e observações de cada cliente.</p></li>
+<li><h4>Pacotes</h4><p>Vender vários cortes de uma vez → o saldo é usado a cada agendamento, e o cliente consulta quanto falta pelo WhatsApp.</p></li>
+<li><h4>Clube de assinatura</h4><p>Receita que se repete todo mês → planos mensais com serviços incluídos; a cobrança vai pelo WhatsApp com o Pix da barbearia.</p></li>
+<li><h4>Estoque</h4><p>Produto que acaba sem ninguém ver → a venda na comanda dá baixa sozinha, e o estoque baixo aparece no app.</p></li>
+</ul>
+</section>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="telas-title" class="section section--alt" id="telas">
+<div class="wrap">
+<h2 id="telas-title">Telas do app, do lado do dono</h2>
+<p class="note">Capturas do sistema rodando com dados fictícios (Barbearia Demo).</p>
+<div class="tabs" data-tabs="">
+<div aria-label="Telas principais" class="tabs__list" hidden="" role="tablist">
+<button aria-controls="tela-agenda" aria-selected="true" class="btn btn--tab" id="tela-tab-agenda" role="tab" type="button">Agenda</button>
+<button aria-controls="tela-conversa" aria-selected="false" class="btn btn--tab" id="tela-tab-conversa" role="tab" tabindex="-1" type="button">Conversa</button>
+<button aria-controls="tela-comanda" aria-selected="false" class="btn btn--tab" id="tela-tab-comanda" role="tab" tabindex="-1" type="button">Comanda</button>
+<button aria-controls="tela-financeiro" aria-selected="false" class="btn btn--tab" id="tela-tab-financeiro" role="tab" tabindex="-1" type="button">Financeiro</button>
+</div>
+<figure class="screen" id="tela-agenda">
+<div class="frame frame--phone">
+
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-claro-390-agenda-profissionais-390.avif 390w, assets/app/barbearia-claro-390-agenda-profissionais-585.avif 585w, assets/app/barbearia-claro-390-agenda-profissionais-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-claro-390-agenda-profissionais-390.webp 390w, assets/app/barbearia-claro-390-agenda-profissionais-585.webp 585w, assets/app/barbearia-claro-390-agenda-profissionais-780.webp 780w" type="image/webp"/><source sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-390-agenda-profissionais-390.avif 390w, assets/app/barbearia-390-agenda-profissionais-585.avif 585w, assets/app/barbearia-390-agenda-profissionais-780.avif 780w" type="image/avif"/><source sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-390-agenda-profissionais-390.webp 390w, assets/app/barbearia-390-agenda-profissionais-585.webp 585w, assets/app/barbearia-390-agenda-profissionais-780.webp 780w" type="image/webp"/><img alt="Agenda de hoje no celular, com as colunas de João e Pedro, os atendimentos marcados, o intervalo fora do expediente e os horários livres" decoding="async" height="1688" loading="lazy" sizes="(max-width: 419px) 86vw, 340px" src="assets/app/barbearia-390-agenda-profissionais-585.jpg" srcset="assets/app/barbearia-390-agenda-profissionais-390.jpg 390w, assets/app/barbearia-390-agenda-profissionais-585.jpg 585w, assets/app/barbearia-390-agenda-profissionais-780.jpg 780w" width="780"/></picture>
+</div>
+<figcaption class="caption"><span class="caption__title">Agenda</span> Os dois barbeiros lado a lado, com os horários livres à vista. Tocar num horário vago abre o agendamento rápido. <span class="seal">Dados fictícios</span></figcaption>
 </figure>
-<figure>
-<div class="pf-chat"><div class="pf-chat__bar"><img alt="" decoding="async" height="32" loading="lazy" src="assets/nichos/barbearia.svg" width="32"/><div><strong>Barbearia Demo</strong><small>conversa real com o bot (dados fictícios)</small></div></div><div aria-label="Conversa real de agendamento com o bot" class="pf-chat__log" role="region" tabindex="0"><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>oi</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Olá, Rafael! Bem-vindo à <b>Barbearia Demo</b> 💈
+<figure class="screen" id="tela-conversa">
+<div class="frame frame--phone">
+
+<div class="phone-chat">
+<p class="phone-chat__when">Conversa de terça-feira, 27/10</p>
+<ol aria-label="Conversa gravada com o atendimento pelo menu" class="chat phone-chat__log" tabindex="0"><li class="msg msg--client"><span class="sr-only">Cliente: </span>oi</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Olá, Rafael! Bem-vindo à <b>Barbearia Demo</b> 💈
 
 <b>1</b> - Agendar horário
 <b>2</b> - Meus agendamentos
@@ -165,15 +335,15 @@
 <b>7</b> - Falar com a barbearia
 <b>8</b> - Pacotes e assinatura
 
-Responda com o número da opção.</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>1</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Qual serviço você quer?
+Responda com o número da opção.</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>1</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Qual serviço você quer?
 
 <b>1</b> - Corte (30 min) - R$ 40,00
 <b>2</b> - Barba (30 min) - R$ 30,00
-<b>3</b> - Corte + Barba (60 min) - R$ 65,00</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>3</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Com qual barbeiro?
+<b>3</b> - Corte + Barba (60 min) - R$ 65,00</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>3</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Com qual barbeiro?
 
 <b>1</b> - João
 <b>2</b> - Pedro
-<b>3</b> - Tanto faz (primeiro disponível)</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>1</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Para qual dia?
+<b>3</b> - Tanto faz (primeiro disponível)</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>1</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Para qual dia?
 
 <b>1</b> - Hoje (ter 27/10)
 <b>2</b> - Amanhã (qua 28/10)
@@ -181,13 +351,13 @@ Responda com o número da opção.</p><p class="pf-msg pf-msg--client"><span cla
 <b>4</b> - Sex 30/10
 <b>5</b> - Sáb 31/10
 <b>6</b> - Seg 02/11
-<b>7</b> - Ter 03/11</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>2</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Horários livres em <b>Amanhã (qua 28/10)</b>:
+<b>7</b> - Ter 03/11</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>2</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Horários livres em <b>Amanhã (qua 28/10)</b>:
 
 <b>1</b> - 09:00    <b>2</b> - 09:30    <b>3</b> - 14:30
 <b>4</b> - 15:00    <b>5</b> - 15:30    <b>6</b> - 16:00
 <b>7</b> - 17:30    <b>8</b> - 18:00
 
-Responda com o número do horário.</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>3</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Qual é o seu nome?</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>Rafael Moreira</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>Confirma o agendamento?
+Responda com o número do horário.</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>3</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Qual é o seu nome?</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>Rafael Moreira</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>Confirma o agendamento?
 
 ✂️ <b>Corte + Barba</b> com João
 📅 Amanhã (qua 28/10) às 14:30
@@ -195,7 +365,7 @@ Responda com o número do horário.</p><p class="pf-msg pf-msg--client"><span cl
 
 <b>1</b> - Confirmar
 <b>2</b> - Escolher outro horário
-<b>3</b> - Desistir</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>1</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>✅ Agendado!
+<b>3</b> - Desistir</li><li class="msg msg--client"><span class="sr-only">Cliente: </span>1</li><li class="msg msg--system"><span class="sr-only">Sistema: </span>Agendamento confirmado</li><li class="msg msg--agent"><span class="sr-only">Atendimento: </span>✅ Agendado!
 
 ✂️ <b>Corte + Barba</b> com João
 📅 Amanhã (qua 28/10) às 14:30
@@ -204,461 +374,276 @@ Responda com o número do horário.</p><p class="pf-msg pf-msg--client"><span cl
 Quer adiantar o pagamento?
 
 <b>1</b> - Pagar agora via Pix
-<b>2</b> - Pagar na barbearia</p><p class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>1</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>💳 <b>Pagamento via Pix</b>
+<b>2</b> - Pagar na barbearia</li></ol>
+</div>
 
-✂️ <b>Corte + Barba</b> com João
-📅 Amanhã (qua 28/10) às 14:30
-💰 R$ 65,00
+</div>
+<figcaption class="caption"><span class="caption__title">Conversa no WhatsApp</span> Conversa gravada com o atendimento pelo menu: serviço, barbeiro, dia, horário e confirmação. <span class="seal">Dados fictícios</span></figcaption>
+</figure>
+<figure class="screen" id="tela-comanda">
+<div class="frame frame--phone">
 
-Valor: <b>R$ 65,00</b>
-Recebedor: Barbearia Demo
-Chave Pix: 7f3c9a2e-5b1d-4e8a-9c6f-000000000001
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-claro-390-comanda-390.avif 390w, assets/app/barbearia-claro-390-comanda-585.avif 585w, assets/app/barbearia-claro-390-comanda-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-claro-390-comanda-390.webp 390w, assets/app/barbearia-claro-390-comanda-585.webp 585w, assets/app/barbearia-claro-390-comanda-780.webp 780w" type="image/webp"/><source sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-390-comanda-390.avif 390w, assets/app/barbearia-390-comanda-585.avif 585w, assets/app/barbearia-390-comanda-780.avif 780w" type="image/avif"/><source sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-390-comanda-390.webp 390w, assets/app/barbearia-390-comanda-585.webp 585w, assets/app/barbearia-390-comanda-780.webp 780w" type="image/webp"/><img alt="Comanda de Ricardo Nunes com um corte de R$ 40,00 e um óleo para barba de R$ 39,90, total de R$ 79,90 e o botão para receber no Pix e fechar" decoding="async" height="1688" loading="lazy" sizes="(max-width: 419px) 86vw, 340px" src="assets/app/barbearia-390-comanda-585.jpg" srcset="assets/app/barbearia-390-comanda-390.jpg 390w, assets/app/barbearia-390-comanda-585.jpg 585w, assets/app/barbearia-390-comanda-780.jpg 780w" width="780"/></picture>
+</div>
+<figcaption class="caption"><span class="caption__title">Comanda</span> Serviço e produto na mesma conta; um toque recebe no Pix e fecha. <span class="seal">Dados fictícios</span></figcaption>
+</figure>
+<figure class="screen" id="tela-financeiro">
+<div class="frame frame--phone">
 
-Copie o código da próxima mensagem e cole no app do seu banco em <b>Pix &gt; Copia e cola</b>.
-Depois de pagar, responda <b>paguei</b> (pode mandar o comprovante).</p><p class="pf-msg pf-msg--bot"><span class="sr-only">Bot: </span>00020126780014br.gov.bcb.pix01367f3c9a2e-5b1d-4e8a-9c6f-0000000000010216AGENDAMENTO 1181520400005303986540565.005802BR5914BARBEARIA DEMO6010SUA CIDADE62240520BB0DX5HBXP5LL1BDTZRS63046B58</p></div></div>
-<figcaption class="small muted">Conversa real com o bot, gerada pelo simulador do servidor: serviço, profissional, dia, horário, confirmação e o Pix com o código copia e cola.</figcaption>
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-claro-390-financeiro-390.avif 390w, assets/app/barbearia-claro-390-financeiro-585.avif 585w, assets/app/barbearia-claro-390-financeiro-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-claro-390-financeiro-390.webp 390w, assets/app/barbearia-claro-390-financeiro-585.webp 585w, assets/app/barbearia-claro-390-financeiro-780.webp 780w" type="image/webp"/><source sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-390-financeiro-390.avif 390w, assets/app/barbearia-390-financeiro-585.avif 585w, assets/app/barbearia-390-financeiro-780.avif 780w" type="image/avif"/><source sizes="(max-width: 419px) 86vw, 340px" srcset="assets/app/barbearia-390-financeiro-390.webp 390w, assets/app/barbearia-390-financeiro-585.webp 585w, assets/app/barbearia-390-financeiro-780.webp 780w" type="image/webp"/><img alt="Financeiro dos últimos 7 dias: faturamento, gastos pagos, lucro e ticket médio comparados com o período anterior, e o gráfico de faturamento e gastos por dia" decoding="async" height="1688" loading="lazy" sizes="(max-width: 419px) 86vw, 340px" src="assets/app/barbearia-390-financeiro-585.jpg" srcset="assets/app/barbearia-390-financeiro-390.jpg 390w, assets/app/barbearia-390-financeiro-585.jpg 585w, assets/app/barbearia-390-financeiro-780.jpg 780w" width="780"/></picture>
+</div>
+<figcaption class="caption"><span class="caption__title">Financeiro</span> Faturamento, gastos, lucro e ticket médio do período, comparados com o anterior. <span class="seal">Dados fictícios</span></figcaption>
 </figure>
 </div>
-<div aria-label="Tema das capturas" class="pf-theme-tabs" role="group">
-<button aria-pressed="true" class="pf-theme-tab" data-niche="barbershop" type="button">Barbearia (escuro)</button>
-<button aria-pressed="false" class="pf-theme-tab" data-niche="beauty" type="button">Salão de beleza (claro)</button>
+<figure class="video">
+<div class="frame frame--browser">
+<div aria-hidden="true" class="frame__bar"><span class="frame__dots"><i></i><i></i><i></i></span></div>
+<video aria-describedby="video-cap" controls="" height="800" playsinline="" poster="assets/app/poster-1280.jpg" preload="none" width="1280">
+<source src="assets/app/app.webm" type="video/webm"/>
+<source src="assets/app/app.mp4" type="video/mp4"/>
+</video>
 </div>
-<div class="pf-t--barbershop"><h3 class="pf-subtitle">No celular</h3><ul class="pf-gallery"><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." class="pf-shot" data-alt="Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." data-avif="assets/app/barbearia-390-hoje-780.avif" data-caption="Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." data-h="1688" data-jpg="assets/app/barbearia-390-hoje-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-hoje-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-hoje-390.avif 390w, assets/app/barbearia-390-hoje-585.avif 585w, assets/app/barbearia-390-hoje-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-hoje-390.webp 390w, assets/app/barbearia-390-hoje-585.webp 585w, assets/app/barbearia-390-hoje-780.webp 780w" type="image/webp"/><img alt="Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-hoje-585.jpg" srcset="assets/app/barbearia-390-hoje-390.jpg 390w, assets/app/barbearia-390-hoje-585.jpg 585w, assets/app/barbearia-390-hoje-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Agenda em linha do tempo, com a marcação do horário atual." class="pf-shot" data-alt="Agenda em linha do tempo, com a marcação do horário atual." data-avif="assets/app/barbearia-390-agenda-timeline-780.avif" data-caption="Agenda em linha do tempo, com a marcação do horário atual." data-h="1688" data-jpg="assets/app/barbearia-390-agenda-timeline-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-agenda-timeline-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-agenda-timeline-390.avif 390w, assets/app/barbearia-390-agenda-timeline-585.avif 585w, assets/app/barbearia-390-agenda-timeline-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-agenda-timeline-390.webp 390w, assets/app/barbearia-390-agenda-timeline-585.webp 585w, assets/app/barbearia-390-agenda-timeline-780.webp 780w" type="image/webp"/><img alt="Agenda em linha do tempo, com a marcação do horário atual." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-agenda-timeline-585.jpg" srcset="assets/app/barbearia-390-agenda-timeline-390.jpg 390w, assets/app/barbearia-390-agenda-timeline-585.jpg 585w, assets/app/barbearia-390-agenda-timeline-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Agenda em linha do tempo, com a marcação do horário atual.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Agenda por profissional, lado a lado." class="pf-shot" data-alt="Agenda por profissional, lado a lado." data-avif="assets/app/barbearia-390-agenda-profissionais-780.avif" data-caption="Agenda por profissional, lado a lado." data-h="1688" data-jpg="assets/app/barbearia-390-agenda-profissionais-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-agenda-profissionais-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-agenda-profissionais-390.avif 390w, assets/app/barbearia-390-agenda-profissionais-585.avif 585w, assets/app/barbearia-390-agenda-profissionais-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-agenda-profissionais-390.webp 390w, assets/app/barbearia-390-agenda-profissionais-585.webp 585w, assets/app/barbearia-390-agenda-profissionais-780.webp 780w" type="image/webp"/><img alt="Agenda por profissional, lado a lado." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-agenda-profissionais-585.jpg" srcset="assets/app/barbearia-390-agenda-profissionais-390.jpg 390w, assets/app/barbearia-390-agenda-profissionais-585.jpg 585w, assets/app/barbearia-390-agenda-profissionais-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Agenda por profissional, lado a lado.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." class="pf-shot" data-alt="Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." data-avif="assets/app/barbearia-390-agendamento-rapido-780.avif" data-caption="Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." data-h="1688" data-jpg="assets/app/barbearia-390-agendamento-rapido-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-agendamento-rapido-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-agendamento-rapido-390.avif 390w, assets/app/barbearia-390-agendamento-rapido-585.avif 585w, assets/app/barbearia-390-agendamento-rapido-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-agendamento-rapido-390.webp 390w, assets/app/barbearia-390-agendamento-rapido-585.webp 585w, assets/app/barbearia-390-agendamento-rapido-780.webp 780w" type="image/webp"/><img alt="Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-agendamento-rapido-585.jpg" srcset="assets/app/barbearia-390-agendamento-rapido-390.jpg 390w, assets/app/barbearia-390-agendamento-rapido-585.jpg 585w, assets/app/barbearia-390-agendamento-rapido-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Comanda com serviço e produto, pronta para receber." class="pf-shot" data-alt="Comanda com serviço e produto, pronta para receber." data-avif="assets/app/barbearia-390-comanda-780.avif" data-caption="Comanda com serviço e produto, pronta para receber." data-h="1688" data-jpg="assets/app/barbearia-390-comanda-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-comanda-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-comanda-390.avif 390w, assets/app/barbearia-390-comanda-585.avif 585w, assets/app/barbearia-390-comanda-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-comanda-390.webp 390w, assets/app/barbearia-390-comanda-585.webp 585w, assets/app/barbearia-390-comanda-780.webp 780w" type="image/webp"/><img alt="Comanda com serviço e produto, pronta para receber." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-comanda-585.jpg" srcset="assets/app/barbearia-390-comanda-390.jpg 390w, assets/app/barbearia-390-comanda-585.jpg 585w, assets/app/barbearia-390-comanda-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Comanda com serviço e produto, pronta para receber.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Pix para confirmar: o comprovante enviado confere com a cobrança." class="pf-shot" data-alt="Pix para confirmar: o comprovante enviado confere com a cobrança." data-avif="assets/app/barbearia-390-pix-pendentes-780.avif" data-caption="Pix para confirmar: o comprovante enviado confere com a cobrança." data-h="1688" data-jpg="assets/app/barbearia-390-pix-pendentes-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-pix-pendentes-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-pix-pendentes-390.avif 390w, assets/app/barbearia-390-pix-pendentes-585.avif 585w, assets/app/barbearia-390-pix-pendentes-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-pix-pendentes-390.webp 390w, assets/app/barbearia-390-pix-pendentes-585.webp 585w, assets/app/barbearia-390-pix-pendentes-780.webp 780w" type="image/webp"/><img alt="Pix para confirmar: o comprovante enviado confere com a cobrança." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-pix-pendentes-585.jpg" srcset="assets/app/barbearia-390-pix-pendentes-390.jpg 390w, assets/app/barbearia-390-pix-pendentes-585.jpg 585w, assets/app/barbearia-390-pix-pendentes-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Pix para confirmar: o comprovante enviado confere com a cobrança.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Comprovante lido e conferido: valor, recebedor, data e ID da transação." class="pf-shot" data-alt="Comprovante lido e conferido: valor, recebedor, data e ID da transação." data-avif="assets/app/barbearia-390-pix-comprovante-780.avif" data-caption="Comprovante lido e conferido: valor, recebedor, data e ID da transação." data-h="1688" data-jpg="assets/app/barbearia-390-pix-comprovante-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-pix-comprovante-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-pix-comprovante-390.avif 390w, assets/app/barbearia-390-pix-comprovante-585.avif 585w, assets/app/barbearia-390-pix-comprovante-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-pix-comprovante-390.webp 390w, assets/app/barbearia-390-pix-comprovante-585.webp 585w, assets/app/barbearia-390-pix-comprovante-780.webp 780w" type="image/webp"/><img alt="Comprovante lido e conferido: valor, recebedor, data e ID da transação." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-pix-comprovante-585.jpg" srcset="assets/app/barbearia-390-pix-comprovante-390.jpg 390w, assets/app/barbearia-390-pix-comprovante-585.jpg 585w, assets/app/barbearia-390-pix-comprovante-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Comprovante lido e conferido: valor, recebedor, data e ID da transação.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." class="pf-shot" data-alt="Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." data-avif="assets/app/barbearia-390-ficha-cliente-780.avif" data-caption="Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." data-h="1688" data-jpg="assets/app/barbearia-390-ficha-cliente-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-ficha-cliente-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-ficha-cliente-390.avif 390w, assets/app/barbearia-390-ficha-cliente-585.avif 585w, assets/app/barbearia-390-ficha-cliente-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-ficha-cliente-390.webp 390w, assets/app/barbearia-390-ficha-cliente-585.webp 585w, assets/app/barbearia-390-ficha-cliente-780.webp 780w" type="image/webp"/><img alt="Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-ficha-cliente-585.jpg" srcset="assets/app/barbearia-390-ficha-cliente-390.jpg 390w, assets/app/barbearia-390-ficha-cliente-585.jpg 585w, assets/app/barbearia-390-ficha-cliente-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Ficha do cliente: visitas, faltas, total gasto, pacotes e observações.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." class="pf-shot" data-alt="Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." data-avif="assets/app/barbearia-390-financeiro-780.avif" data-caption="Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." data-h="1688" data-jpg="assets/app/barbearia-390-financeiro-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-financeiro-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-financeiro-390.avif 390w, assets/app/barbearia-390-financeiro-585.avif 585w, assets/app/barbearia-390-financeiro-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-financeiro-390.webp 390w, assets/app/barbearia-390-financeiro-585.webp 585w, assets/app/barbearia-390-financeiro-780.webp 780w" type="image/webp"/><img alt="Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-financeiro-585.jpg" srcset="assets/app/barbearia-390-financeiro-390.jpg 390w, assets/app/barbearia-390-financeiro-585.jpg 585w, assets/app/barbearia-390-financeiro-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." class="pf-shot" data-alt="Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." data-avif="assets/app/barbearia-390-aparencia-780.avif" data-caption="Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." data-h="1688" data-jpg="assets/app/barbearia-390-aparencia-780.jpg" data-w="780" data-webp="assets/app/barbearia-390-aparencia-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-aparencia-390.avif 390w, assets/app/barbearia-390-aparencia-585.avif 585w, assets/app/barbearia-390-aparencia-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/barbearia-390-aparencia-390.webp 390w, assets/app/barbearia-390-aparencia-585.webp 585w, assets/app/barbearia-390-aparencia-780.webp 780w" type="image/webp"/><img alt="Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/barbearia-390-aparencia-585.jpg" srcset="assets/app/barbearia-390-aparencia-390.jpg 390w, assets/app/barbearia-390-aparencia-585.jpg 585w, assets/app/barbearia-390-aparencia-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Aparência: cores e vocabulário de cada segmento, no claro ou no escuro.</figcaption></figure></li></ul><h3 class="pf-subtitle">No computador</h3><ul class="pf-gallery pf-gallery--wide"><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: o dia inteiro numa tela, com o menu lateral." class="pf-shot" data-alt="Versão web: o dia inteiro numa tela, com o menu lateral." data-avif="assets/app/barbearia-1440-hoje-1440.avif" data-caption="Versão web: o dia inteiro numa tela, com o menu lateral." data-h="900" data-jpg="assets/app/barbearia-1440-hoje-1440.jpg" data-w="1440" data-webp="assets/app/barbearia-1440-hoje-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-hoje-720.avif 720w, assets/app/barbearia-1440-hoje-1080.avif 1080w, assets/app/barbearia-1440-hoje-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-hoje-720.webp 720w, assets/app/barbearia-1440-hoje-1080.webp 1080w, assets/app/barbearia-1440-hoje-1440.webp 1440w" type="image/webp"/><img alt="Versão web: o dia inteiro numa tela, com o menu lateral." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/barbearia-1440-hoje-1080.jpg" srcset="assets/app/barbearia-1440-hoje-720.jpg 720w, assets/app/barbearia-1440-hoje-1080.jpg 1080w, assets/app/barbearia-1440-hoje-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: o dia inteiro numa tela, com o menu lateral.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: agenda dos profissionais lado a lado." class="pf-shot" data-alt="Versão web: agenda dos profissionais lado a lado." data-avif="assets/app/barbearia-1440-agenda-profissionais-1440.avif" data-caption="Versão web: agenda dos profissionais lado a lado." data-h="900" data-jpg="assets/app/barbearia-1440-agenda-profissionais-1440.jpg" data-w="1440" data-webp="assets/app/barbearia-1440-agenda-profissionais-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-agenda-profissionais-720.avif 720w, assets/app/barbearia-1440-agenda-profissionais-1080.avif 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-agenda-profissionais-720.webp 720w, assets/app/barbearia-1440-agenda-profissionais-1080.webp 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.webp 1440w" type="image/webp"/><img alt="Versão web: agenda dos profissionais lado a lado." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/barbearia-1440-agenda-profissionais-1080.jpg" srcset="assets/app/barbearia-1440-agenda-profissionais-720.jpg 720w, assets/app/barbearia-1440-agenda-profissionais-1080.jpg 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: agenda dos profissionais lado a lado.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: comanda com os lançamentos e o pagamento lado a lado." class="pf-shot" data-alt="Versão web: comanda com os lançamentos e o pagamento lado a lado." data-avif="assets/app/barbearia-1440-comanda-1440.avif" data-caption="Versão web: comanda com os lançamentos e o pagamento lado a lado." data-h="900" data-jpg="assets/app/barbearia-1440-comanda-1440.jpg" data-w="1440" data-webp="assets/app/barbearia-1440-comanda-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-comanda-720.avif 720w, assets/app/barbearia-1440-comanda-1080.avif 1080w, assets/app/barbearia-1440-comanda-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-comanda-720.webp 720w, assets/app/barbearia-1440-comanda-1080.webp 1080w, assets/app/barbearia-1440-comanda-1440.webp 1440w" type="image/webp"/><img alt="Versão web: comanda com os lançamentos e o pagamento lado a lado." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/barbearia-1440-comanda-1080.jpg" srcset="assets/app/barbearia-1440-comanda-720.jpg 720w, assets/app/barbearia-1440-comanda-1080.jpg 1080w, assets/app/barbearia-1440-comanda-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: comanda com os lançamentos e o pagamento lado a lado.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: relatórios por período, profissional e serviço." class="pf-shot" data-alt="Versão web: relatórios por período, profissional e serviço." data-avif="assets/app/barbearia-1440-relatorios-1440.avif" data-caption="Versão web: relatórios por período, profissional e serviço." data-h="900" data-jpg="assets/app/barbearia-1440-relatorios-1440.jpg" data-w="1440" data-webp="assets/app/barbearia-1440-relatorios-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-relatorios-720.avif 720w, assets/app/barbearia-1440-relatorios-1080.avif 1080w, assets/app/barbearia-1440-relatorios-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/barbearia-1440-relatorios-720.webp 720w, assets/app/barbearia-1440-relatorios-1080.webp 1080w, assets/app/barbearia-1440-relatorios-1440.webp 1440w" type="image/webp"/><img alt="Versão web: relatórios por período, profissional e serviço." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/barbearia-1440-relatorios-1080.jpg" srcset="assets/app/barbearia-1440-relatorios-720.jpg 720w, assets/app/barbearia-1440-relatorios-1080.jpg 1080w, assets/app/barbearia-1440-relatorios-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: relatórios por período, profissional e serviço.</figcaption></figure></li></ul></div><div class="pf-t--beauty"><h3 class="pf-subtitle">No celular</h3><ul class="pf-gallery"><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." class="pf-shot" data-alt="Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." data-avif="assets/app/salao-390-hoje-780.avif" data-caption="Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." data-h="1688" data-jpg="assets/app/salao-390-hoje-780.jpg" data-w="780" data-webp="assets/app/salao-390-hoje-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-hoje-390.avif 390w, assets/app/salao-390-hoje-585.avif 585w, assets/app/salao-390-hoje-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-hoje-390.webp 390w, assets/app/salao-390-hoje-585.webp 585w, assets/app/salao-390-hoje-780.webp 780w" type="image/webp"/><img alt="Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-hoje-585.jpg" srcset="assets/app/salao-390-hoje-390.jpg 390w, assets/app/salao-390-hoje-585.jpg 585w, assets/app/salao-390-hoje-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Hoje: o atendimento de agora, o próximo e os avisos de Pix e de pedido para aprovar.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Agenda em linha do tempo, com a marcação do horário atual." class="pf-shot" data-alt="Agenda em linha do tempo, com a marcação do horário atual." data-avif="assets/app/salao-390-agenda-timeline-780.avif" data-caption="Agenda em linha do tempo, com a marcação do horário atual." data-h="1688" data-jpg="assets/app/salao-390-agenda-timeline-780.jpg" data-w="780" data-webp="assets/app/salao-390-agenda-timeline-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-agenda-timeline-390.avif 390w, assets/app/salao-390-agenda-timeline-585.avif 585w, assets/app/salao-390-agenda-timeline-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-agenda-timeline-390.webp 390w, assets/app/salao-390-agenda-timeline-585.webp 585w, assets/app/salao-390-agenda-timeline-780.webp 780w" type="image/webp"/><img alt="Agenda em linha do tempo, com a marcação do horário atual." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-agenda-timeline-585.jpg" srcset="assets/app/salao-390-agenda-timeline-390.jpg 390w, assets/app/salao-390-agenda-timeline-585.jpg 585w, assets/app/salao-390-agenda-timeline-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Agenda em linha do tempo, com a marcação do horário atual.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Agenda por profissional, lado a lado." class="pf-shot" data-alt="Agenda por profissional, lado a lado." data-avif="assets/app/salao-390-agenda-profissionais-780.avif" data-caption="Agenda por profissional, lado a lado." data-h="1688" data-jpg="assets/app/salao-390-agenda-profissionais-780.jpg" data-w="780" data-webp="assets/app/salao-390-agenda-profissionais-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-agenda-profissionais-390.avif 390w, assets/app/salao-390-agenda-profissionais-585.avif 585w, assets/app/salao-390-agenda-profissionais-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-agenda-profissionais-390.webp 390w, assets/app/salao-390-agenda-profissionais-585.webp 585w, assets/app/salao-390-agenda-profissionais-780.webp 780w" type="image/webp"/><img alt="Agenda por profissional, lado a lado." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-agenda-profissionais-585.jpg" srcset="assets/app/salao-390-agenda-profissionais-390.jpg 390w, assets/app/salao-390-agenda-profissionais-585.jpg 585w, assets/app/salao-390-agenda-profissionais-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Agenda por profissional, lado a lado.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." class="pf-shot" data-alt="Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." data-avif="assets/app/salao-390-agendamento-rapido-780.avif" data-caption="Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." data-h="1688" data-jpg="assets/app/salao-390-agendamento-rapido-780.jpg" data-w="780" data-webp="assets/app/salao-390-agendamento-rapido-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-agendamento-rapido-390.avif 390w, assets/app/salao-390-agendamento-rapido-585.avif 585w, assets/app/salao-390-agendamento-rapido-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-agendamento-rapido-390.webp 390w, assets/app/salao-390-agendamento-rapido-585.webp 585w, assets/app/salao-390-agendamento-rapido-780.webp 780w" type="image/webp"/><img alt="Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-agendamento-rapido-585.jpg" srcset="assets/app/salao-390-agendamento-rapido-390.jpg 390w, assets/app/salao-390-agendamento-rapido-585.jpg 585w, assets/app/salao-390-agendamento-rapido-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Agendamento rápido: toque num horário vago, busque o cliente e escolha o serviço.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Comanda com serviço e produto, pronta para receber." class="pf-shot" data-alt="Comanda com serviço e produto, pronta para receber." data-avif="assets/app/salao-390-comanda-780.avif" data-caption="Comanda com serviço e produto, pronta para receber." data-h="1688" data-jpg="assets/app/salao-390-comanda-780.jpg" data-w="780" data-webp="assets/app/salao-390-comanda-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-comanda-390.avif 390w, assets/app/salao-390-comanda-585.avif 585w, assets/app/salao-390-comanda-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-comanda-390.webp 390w, assets/app/salao-390-comanda-585.webp 585w, assets/app/salao-390-comanda-780.webp 780w" type="image/webp"/><img alt="Comanda com serviço e produto, pronta para receber." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-comanda-585.jpg" srcset="assets/app/salao-390-comanda-390.jpg 390w, assets/app/salao-390-comanda-585.jpg 585w, assets/app/salao-390-comanda-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Comanda com serviço e produto, pronta para receber.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Pix para confirmar: o comprovante enviado confere com a cobrança." class="pf-shot" data-alt="Pix para confirmar: o comprovante enviado confere com a cobrança." data-avif="assets/app/salao-390-pix-pendentes-780.avif" data-caption="Pix para confirmar: o comprovante enviado confere com a cobrança." data-h="1688" data-jpg="assets/app/salao-390-pix-pendentes-780.jpg" data-w="780" data-webp="assets/app/salao-390-pix-pendentes-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-pix-pendentes-390.avif 390w, assets/app/salao-390-pix-pendentes-585.avif 585w, assets/app/salao-390-pix-pendentes-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-pix-pendentes-390.webp 390w, assets/app/salao-390-pix-pendentes-585.webp 585w, assets/app/salao-390-pix-pendentes-780.webp 780w" type="image/webp"/><img alt="Pix para confirmar: o comprovante enviado confere com a cobrança." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-pix-pendentes-585.jpg" srcset="assets/app/salao-390-pix-pendentes-390.jpg 390w, assets/app/salao-390-pix-pendentes-585.jpg 585w, assets/app/salao-390-pix-pendentes-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Pix para confirmar: o comprovante enviado confere com a cobrança.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Comprovante lido e conferido: valor, recebedor, data e ID da transação." class="pf-shot" data-alt="Comprovante lido e conferido: valor, recebedor, data e ID da transação." data-avif="assets/app/salao-390-pix-comprovante-780.avif" data-caption="Comprovante lido e conferido: valor, recebedor, data e ID da transação." data-h="1688" data-jpg="assets/app/salao-390-pix-comprovante-780.jpg" data-w="780" data-webp="assets/app/salao-390-pix-comprovante-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-pix-comprovante-390.avif 390w, assets/app/salao-390-pix-comprovante-585.avif 585w, assets/app/salao-390-pix-comprovante-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-pix-comprovante-390.webp 390w, assets/app/salao-390-pix-comprovante-585.webp 585w, assets/app/salao-390-pix-comprovante-780.webp 780w" type="image/webp"/><img alt="Comprovante lido e conferido: valor, recebedor, data e ID da transação." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-pix-comprovante-585.jpg" srcset="assets/app/salao-390-pix-comprovante-390.jpg 390w, assets/app/salao-390-pix-comprovante-585.jpg 585w, assets/app/salao-390-pix-comprovante-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Comprovante lido e conferido: valor, recebedor, data e ID da transação.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." class="pf-shot" data-alt="Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." data-avif="assets/app/salao-390-ficha-cliente-780.avif" data-caption="Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." data-h="1688" data-jpg="assets/app/salao-390-ficha-cliente-780.jpg" data-w="780" data-webp="assets/app/salao-390-ficha-cliente-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-ficha-cliente-390.avif 390w, assets/app/salao-390-ficha-cliente-585.avif 585w, assets/app/salao-390-ficha-cliente-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-ficha-cliente-390.webp 390w, assets/app/salao-390-ficha-cliente-585.webp 585w, assets/app/salao-390-ficha-cliente-780.webp 780w" type="image/webp"/><img alt="Ficha do cliente: visitas, faltas, total gasto, pacotes e observações." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-ficha-cliente-585.jpg" srcset="assets/app/salao-390-ficha-cliente-390.jpg 390w, assets/app/salao-390-ficha-cliente-585.jpg 585w, assets/app/salao-390-ficha-cliente-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Ficha do cliente: visitas, faltas, total gasto, pacotes e observações.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." class="pf-shot" data-alt="Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." data-avif="assets/app/salao-390-financeiro-780.avif" data-caption="Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." data-h="1688" data-jpg="assets/app/salao-390-financeiro-780.jpg" data-w="780" data-webp="assets/app/salao-390-financeiro-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-financeiro-390.avif 390w, assets/app/salao-390-financeiro-585.avif 585w, assets/app/salao-390-financeiro-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-financeiro-390.webp 390w, assets/app/salao-390-financeiro-585.webp 585w, assets/app/salao-390-financeiro-780.webp 780w" type="image/webp"/><img alt="Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-financeiro-585.jpg" srcset="assets/app/salao-390-financeiro-390.jpg 390w, assets/app/salao-390-financeiro-585.jpg 585w, assets/app/salao-390-financeiro-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Financeiro: faturamento, gastos, lucro e ticket médio, com o gráfico por dia.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." class="pf-shot" data-alt="Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." data-avif="assets/app/salao-390-aparencia-780.avif" data-caption="Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." data-h="1688" data-jpg="assets/app/salao-390-aparencia-780.jpg" data-w="780" data-webp="assets/app/salao-390-aparencia-780.webp" type="button"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-aparencia-390.avif 390w, assets/app/salao-390-aparencia-585.avif 585w, assets/app/salao-390-aparencia-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" srcset="assets/app/salao-390-aparencia-390.webp 390w, assets/app/salao-390-aparencia-585.webp 585w, assets/app/salao-390-aparencia-780.webp 780w" type="image/webp"/><img alt="Aparência: cores e vocabulário de cada segmento, no claro ou no escuro." decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, (max-width: 999px) 30vw, 200px" src="assets/app/salao-390-aparencia-585.jpg" srcset="assets/app/salao-390-aparencia-390.jpg 390w, assets/app/salao-390-aparencia-585.jpg 585w, assets/app/salao-390-aparencia-780.jpg 780w" width="780"/></picture></div></div></button><figcaption class="small muted">Aparência: cores e vocabulário de cada segmento, no claro ou no escuro.</figcaption></figure></li></ul><h3 class="pf-subtitle">No computador</h3><ul class="pf-gallery pf-gallery--wide"><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: o dia inteiro numa tela, com o menu lateral." class="pf-shot" data-alt="Versão web: o dia inteiro numa tela, com o menu lateral." data-avif="assets/app/salao-1440-hoje-1440.avif" data-caption="Versão web: o dia inteiro numa tela, com o menu lateral." data-h="900" data-jpg="assets/app/salao-1440-hoje-1440.jpg" data-w="1440" data-webp="assets/app/salao-1440-hoje-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-hoje-720.avif 720w, assets/app/salao-1440-hoje-1080.avif 1080w, assets/app/salao-1440-hoje-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-hoje-720.webp 720w, assets/app/salao-1440-hoje-1080.webp 1080w, assets/app/salao-1440-hoje-1440.webp 1440w" type="image/webp"/><img alt="Versão web: o dia inteiro numa tela, com o menu lateral." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/salao-1440-hoje-1080.jpg" srcset="assets/app/salao-1440-hoje-720.jpg 720w, assets/app/salao-1440-hoje-1080.jpg 1080w, assets/app/salao-1440-hoje-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: o dia inteiro numa tela, com o menu lateral.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: agenda dos profissionais lado a lado." class="pf-shot" data-alt="Versão web: agenda dos profissionais lado a lado." data-avif="assets/app/salao-1440-agenda-profissionais-1440.avif" data-caption="Versão web: agenda dos profissionais lado a lado." data-h="900" data-jpg="assets/app/salao-1440-agenda-profissionais-1440.jpg" data-w="1440" data-webp="assets/app/salao-1440-agenda-profissionais-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-agenda-profissionais-720.avif 720w, assets/app/salao-1440-agenda-profissionais-1080.avif 1080w, assets/app/salao-1440-agenda-profissionais-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-agenda-profissionais-720.webp 720w, assets/app/salao-1440-agenda-profissionais-1080.webp 1080w, assets/app/salao-1440-agenda-profissionais-1440.webp 1440w" type="image/webp"/><img alt="Versão web: agenda dos profissionais lado a lado." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/salao-1440-agenda-profissionais-1080.jpg" srcset="assets/app/salao-1440-agenda-profissionais-720.jpg 720w, assets/app/salao-1440-agenda-profissionais-1080.jpg 1080w, assets/app/salao-1440-agenda-profissionais-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: agenda dos profissionais lado a lado.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: comanda com os lançamentos e o pagamento lado a lado." class="pf-shot" data-alt="Versão web: comanda com os lançamentos e o pagamento lado a lado." data-avif="assets/app/salao-1440-comanda-1440.avif" data-caption="Versão web: comanda com os lançamentos e o pagamento lado a lado." data-h="900" data-jpg="assets/app/salao-1440-comanda-1440.jpg" data-w="1440" data-webp="assets/app/salao-1440-comanda-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-comanda-720.avif 720w, assets/app/salao-1440-comanda-1080.avif 1080w, assets/app/salao-1440-comanda-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-comanda-720.webp 720w, assets/app/salao-1440-comanda-1080.webp 1080w, assets/app/salao-1440-comanda-1440.webp 1440w" type="image/webp"/><img alt="Versão web: comanda com os lançamentos e o pagamento lado a lado." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/salao-1440-comanda-1080.jpg" srcset="assets/app/salao-1440-comanda-720.jpg 720w, assets/app/salao-1440-comanda-1080.jpg 1080w, assets/app/salao-1440-comanda-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: comanda com os lançamentos e o pagamento lado a lado.</figcaption></figure></li><li><figure><button aria-haspopup="dialog" aria-label="Ampliar: Versão web: relatórios por período, profissional e serviço." class="pf-shot" data-alt="Versão web: relatórios por período, profissional e serviço." data-avif="assets/app/salao-1440-relatorios-1440.avif" data-caption="Versão web: relatórios por período, profissional e serviço." data-h="900" data-jpg="assets/app/salao-1440-relatorios-1440.jpg" data-w="1440" data-webp="assets/app/salao-1440-relatorios-1440.webp" type="button"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span></div><picture><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-relatorios-720.avif 720w, assets/app/salao-1440-relatorios-1080.avif 1080w, assets/app/salao-1440-relatorios-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 899px) 92vw, 540px" srcset="assets/app/salao-1440-relatorios-720.webp 720w, assets/app/salao-1440-relatorios-1080.webp 1080w, assets/app/salao-1440-relatorios-1440.webp 1440w" type="image/webp"/><img alt="Versão web: relatórios por período, profissional e serviço." decoding="async" height="900" loading="lazy" sizes="(max-width: 899px) 92vw, 540px" src="assets/app/salao-1440-relatorios-1080.jpg" srcset="assets/app/salao-1440-relatorios-720.jpg 720w, assets/app/salao-1440-relatorios-1080.jpg 1080w, assets/app/salao-1440-relatorios-1440.jpg 1440w" width="1440"/></picture></div></button><figcaption class="small muted">Versão web: relatórios por período, profissional e serviço.</figcaption></figure></li></ul></div>
-</div>
-</section>
+<figcaption class="caption" id="video-cap"><span class="caption__title">O fluxo completo no computador</span> Vídeo sem som (23 s): agendamento rápido num horário vago e fechamento da comanda com produto, recebendo no Pix. <span class="seal">Dados fictícios</span></figcaption>
+</figure>
+<details class="more more--screens">
+<summary>Ver mais telas</summary>
+<ul class="screens">
+<li><figure><div class="frame frame--phone">
 
-<section aria-labelledby="demo-title" class="section" id="demo">
-<div class="wrap demo">
-<div class="demo__text">
-<h2 id="demo-title">Experimente como seu <span class="js-customer">cliente</span> agenda</h2>
-<p class="muted">Toque nas respostas da conversa <span class="js-where">ao lado</span>. É uma simulação do robô do SyncServ, com as mesmas etapas que seu <span class="js-customer">cliente</span> vê no WhatsApp: menu, serviço, <span class="js-pro">profissional</span>, dia e horário, confirmação, Pix e lembrete.</p>
-<p class="muted small">Nada é enviado: a conversa roda só no seu navegador.</p>
-<a class="btn btn--ghost js-demo-real" hidden="" href="#">
-<svg aria-hidden="true" class="ic ic--sm"><use href="#i-chat"></use></svg> Falar com o robô de verdade
-          </a>
-</div>
-<div aria-label="Simulador de conversa no WhatsApp" class="sim" role="group">
-<div class="sim__bar">
-<img alt="" aria-hidden="true" class="js-niche-symbol" decoding="async" height="32" loading="lazy" src="assets/nichos/barbearia.svg" width="32"/>
-<div><strong class="js-business">Sua Barbearia</strong><small class="js-sim-status">online</small></div>
-<button aria-label="Recomeçar a conversa" class="sim__reset js-sim-reset" type="button">
-<svg aria-hidden="true" class="ic ic--sm"><use href="#i-refresh"></use></svg>
-</button>
-</div>
-<div aria-live="polite" aria-relevant="additions" class="sim__log js-sim-log" role="log" tabindex="0"></div>
-<div aria-label="Respostas" class="sim__options js-sim-options" role="group"></div>
-</div>
-</div>
-</section>
-<section aria-labelledby="ia-title" class="section" id="ia">
-<div class="wrap">
-<h2 id="ia-title">Seu cliente escreve do jeito dele, a IA entende</h2>
-<p class="muted intro">A IA conversa, mas horários, preços e regras vêm do sistema, e nada é gravado sem a confirmação do cliente.</p>
-<div aria-label="Conversas de exemplo" class="pf-ai__tabs" hidden="" role="tablist"><button aria-controls="ia-card-0" aria-selected="true" class="pf-ai__tab" id="ia-tab-0" role="tab" type="button">Agendamento</button><button aria-controls="ia-card-1" aria-selected="false" class="pf-ai__tab" id="ia-tab-1" role="tab" tabindex="-1" type="button">Dúvidas</button><button aria-controls="ia-card-2" aria-selected="false" class="pf-ai__tab" id="ia-tab-2" role="tab" tabindex="-1" type="button">Fora do assunto</button></div>
-<div class="pf-ai"><div aria-labelledby="ia-agendamento" class="pf-ai__card" id="ia-card-0" role="group"><h3 class="pf-ai__title" id="ia-agendamento">Agendamento</h3><ol aria-label="Conversa: Agendamento" class="pf-ai__log"><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>quero cortar o cabelo amanhã depois das 17h com o João</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os serviços e os preços</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os profissionais e o que cada um faz</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou horários livres de corte amanhã depois das 17:00 com João (4 encontrados)</span></li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="pf-msg pf-msg--bot"><span class="sr-only">Atendente IA: </span>Encontrei horários com o João amanhã após as 17h: às 17:00, 17:30, 18:00 ou 18:30. Qual deles fica melhor para você e qual é o seu nome? ✂️</li><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>pode ser às 17h. meu nome é Rafael</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os serviços e os preços</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os profissionais e o que cada um faz</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Salvou o nome que o cliente informou</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Pediu ao sistema o resumo para o cliente confirmar (nada gravado ainda)</span></li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>Confirma o agendamento?
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-hoje-390.avif 390w, assets/app/barbearia-claro-390-hoje-585.avif 585w, assets/app/barbearia-claro-390-hoje-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-hoje-390.webp 390w, assets/app/barbearia-claro-390-hoje-585.webp 585w, assets/app/barbearia-claro-390-hoje-780.webp 780w" type="image/webp"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-hoje-390.avif 390w, assets/app/barbearia-390-hoje-585.avif 585w, assets/app/barbearia-390-hoje-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-hoje-390.webp 390w, assets/app/barbearia-390-hoje-585.webp 585w, assets/app/barbearia-390-hoje-780.webp 780w" type="image/webp"/><img alt="Tela Hoje: o atendimento em andamento, o próximo cliente e os avisos de Pix para confirmar e de pedido para aprovar" decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, 220px" src="assets/app/barbearia-390-hoje-585.jpg" srcset="assets/app/barbearia-390-hoje-390.jpg 390w, assets/app/barbearia-390-hoje-585.jpg 585w, assets/app/barbearia-390-hoje-780.jpg 780w" width="780"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Hoje</span> O atendimento de agora, o próximo e os avisos.</figcaption></figure></li>
+<li><figure><div class="frame frame--phone">
 
-✂️ <b>Corte</b> com João
-📅 Amanhã (qui 29/10) às 17:00
-💰 R$ 40,00<ul aria-label="Opções oferecidas" class="pf-ai__btns"><li>Confirmar</li><li>Escolher outro horário</li><li>Desistir</li></ul></li><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>1 <span class="pf-msg__choice">(Confirmar)</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs"><use href="#i-check"></use></svg><span><span class="sr-only">Etapa: </span>O sistema conferiu as regras da agenda e gravou o agendamento</span></li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>✅ Agendado!
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-agenda-timeline-390.avif 390w, assets/app/barbearia-claro-390-agenda-timeline-585.avif 585w, assets/app/barbearia-claro-390-agenda-timeline-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-agenda-timeline-390.webp 390w, assets/app/barbearia-claro-390-agenda-timeline-585.webp 585w, assets/app/barbearia-claro-390-agenda-timeline-780.webp 780w" type="image/webp"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-agenda-timeline-390.avif 390w, assets/app/barbearia-390-agenda-timeline-585.avif 585w, assets/app/barbearia-390-agenda-timeline-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-agenda-timeline-390.webp 390w, assets/app/barbearia-390-agenda-timeline-585.webp 585w, assets/app/barbearia-390-agenda-timeline-780.webp 780w" type="image/webp"/><img alt="Agenda em linha do tempo, com a marca do horário atual e os horários livres" decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, 220px" src="assets/app/barbearia-390-agenda-timeline-585.jpg" srcset="assets/app/barbearia-390-agenda-timeline-390.jpg 390w, assets/app/barbearia-390-agenda-timeline-585.jpg 585w, assets/app/barbearia-390-agenda-timeline-780.jpg 780w" width="780"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Linha do tempo</span> A agenda com a marca do horário atual.</figcaption></figure></li>
+<li><figure><div class="frame frame--phone">
 
-✂️ <b>Corte</b> com João
-📅 Amanhã (qui 29/10) às 17:00
-💰 R$ 40,00
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-agendamento-rapido-390.avif 390w, assets/app/barbearia-claro-390-agendamento-rapido-585.avif 585w, assets/app/barbearia-claro-390-agendamento-rapido-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-agendamento-rapido-390.webp 390w, assets/app/barbearia-claro-390-agendamento-rapido-585.webp 585w, assets/app/barbearia-claro-390-agendamento-rapido-780.webp 780w" type="image/webp"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-agendamento-rapido-390.avif 390w, assets/app/barbearia-390-agendamento-rapido-585.avif 585w, assets/app/barbearia-390-agendamento-rapido-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-agendamento-rapido-390.webp 390w, assets/app/barbearia-390-agendamento-rapido-585.webp 585w, assets/app/barbearia-390-agendamento-rapido-780.webp 780w" type="image/webp"/><img alt="Agendamento rápido: depois de tocar num horário vago, a busca do cliente e a escolha do serviço" decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, 220px" src="assets/app/barbearia-390-agendamento-rapido-585.jpg" srcset="assets/app/barbearia-390-agendamento-rapido-390.jpg 390w, assets/app/barbearia-390-agendamento-rapido-585.jpg 585w, assets/app/barbearia-390-agendamento-rapido-780.jpg 780w" width="780"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Agendamento rápido</span> Toque num horário vago, busque o cliente e escolha o serviço.</figcaption></figure></li>
+<li><figure><div class="frame frame--phone">
 
-Quer adiantar o pagamento?<ul aria-label="Opções oferecidas" class="pf-ai__btns"><li>Pagar agora via Pix</li><li>Pagar na barbearia</li></ul></li></ol></div><div aria-labelledby="ia-duvidas" class="pf-ai__card" id="ia-card-1" role="group"><h3 class="pf-ai__title" id="ia-duvidas">Dúvidas</h3><ol aria-label="Conversa: Dúvidas" class="pf-ai__log"><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>qnto ta o degrade? vcs abrem sabado?</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os serviços e os preços</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou horário de funcionamento, endereço e formas de pagamento</span></li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="pf-msg pf-msg--bot"><span class="sr-only">Atendente IA: </span>O corte custa R$ 40,00 e no sábado funcionamos das 09:00 às 12:00. Quer agendar um horário para este sábado? ✂️</li><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>aceita pix ou cartao?</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou horário de funcionamento, endereço e formas de pagamento</span></li><li class="pf-msg pf-msg--bot"><span class="sr-only">Atendente IA: </span>Aceitamos Pix antecipado pelo WhatsApp! Sobre outras formas, não tenho essa informação, mas posso te transferir para a equipe se preferir. 💳</li><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>show, valeu</li><li class="pf-msg pf-msg--bot"><span class="sr-only">Atendente IA: </span>Por nada! Se precisar agendar um horário ou tirar mais alguma dúvida, é só me chamar. 😊</li></ol></div><div aria-labelledby="ia-fora-do-assunto" class="pf-ai__card" id="ia-card-2" role="group"><h3 class="pf-ai__title" id="ia-fora-do-assunto">Fora do assunto</h3><ol aria-label="Conversa: Fora do assunto" class="pf-ai__log"><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>qual o melhor time do Brasil?</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Marcou a mensagem como fora do assunto</span></li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>ℹ️ Este é o atendimento automático de <b>Barbearia Demo</b>. Seus dados são usados só para o seu agendamento. Para falar com uma pessoa, mande <b>atendente</b>; para ver ou apagar seus dados, mande <b>MEUS DADOS</b>.</li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>Aqui eu só consigo ajudar com agendamentos e informações da barbearia. Quer marcar um horário?</li><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>kkk ta bom. tem horario pra fazer a barba hoje a tarde?</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os serviços e os preços</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou horários livres de barba hoje depois das 12:00 até as 18:00 (8 encontrados)</span></li><li class="pf-msg pf-msg--bot"><span class="sr-only">Atendente IA: </span>Temos horários hoje à tarde para barba: às 13:00, 14:00, 14:30, 15:00 ou 15:30. Qual prefere e qual é o seu nome? ✂️</li><li class="pf-msg pf-msg--client"><span class="sr-only">Cliente: </span>fechou, 13h. sou o Lucas</li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou os serviços e os preços</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Salvou o nome que o cliente informou</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Consultou horários livres de barba hoje depois das 12:00 até as 18:00 (8 encontrados)</span></li><li class="pf-ai__step"><svg aria-hidden="true" class="ic ic--xs" viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l4.5 4.5"></path></svg><span><span class="sr-only">Etapa: </span>Pediu ao sistema o resumo para o cliente confirmar (nada gravado ainda)</span></li><li class="pf-msg pf-msg--bot pf-msg--sys"><span class="sr-only">Sistema: </span><span aria-hidden="true" class="pf-msg__tag">Mensagem automática do sistema</span>Confirma o agendamento?
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-pix-pendentes-390.avif 390w, assets/app/barbearia-claro-390-pix-pendentes-585.avif 585w, assets/app/barbearia-claro-390-pix-pendentes-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-pix-pendentes-390.webp 390w, assets/app/barbearia-claro-390-pix-pendentes-585.webp 585w, assets/app/barbearia-claro-390-pix-pendentes-780.webp 780w" type="image/webp"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-pix-pendentes-390.avif 390w, assets/app/barbearia-390-pix-pendentes-585.avif 585w, assets/app/barbearia-390-pix-pendentes-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-pix-pendentes-390.webp 390w, assets/app/barbearia-390-pix-pendentes-585.webp 585w, assets/app/barbearia-390-pix-pendentes-780.webp 780w" type="image/webp"/><img alt="Lista de Pix para confirmar, com o selo de comprovante que confere com a cobrança" decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, 220px" src="assets/app/barbearia-390-pix-pendentes-585.jpg" srcset="assets/app/barbearia-390-pix-pendentes-390.jpg 390w, assets/app/barbearia-390-pix-pendentes-585.jpg 585w, assets/app/barbearia-390-pix-pendentes-780.jpg 780w" width="780"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Pix para confirmar</span> O comprovante enviado confere com a cobrança; a confirmação é do dono.</figcaption></figure></li>
+<li><figure><div class="frame frame--phone">
 
-✂️ <b>Barba</b> com Pedro
-📅 Hoje (qua 28/10) às 13:00
-💰 R$ 30,00<ul aria-label="Opções oferecidas" class="pf-ai__btns"><li>Confirmar</li><li>Escolher outro horário</li><li>Desistir</li></ul></li></ol></div></div>
-<p class="pf-ai__seal small">Conversas reais gravadas com a IA em 27/10/2026, com dados fictícios.</p>
-</div>
-</section>
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-pix-comprovante-390.avif 390w, assets/app/barbearia-claro-390-pix-comprovante-585.avif 585w, assets/app/barbearia-claro-390-pix-comprovante-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-pix-comprovante-390.webp 390w, assets/app/barbearia-claro-390-pix-comprovante-585.webp 585w, assets/app/barbearia-claro-390-pix-comprovante-780.webp 780w" type="image/webp"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-pix-comprovante-390.avif 390w, assets/app/barbearia-390-pix-comprovante-585.avif 585w, assets/app/barbearia-390-pix-comprovante-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-pix-comprovante-390.webp 390w, assets/app/barbearia-390-pix-comprovante-585.webp 585w, assets/app/barbearia-390-pix-comprovante-780.webp 780w" type="image/webp"/><img alt="Comprovante de Pix lido pelo sistema: valor, recebedor, data e ID da transação conferidos com a cobrança" decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, 220px" src="assets/app/barbearia-390-pix-comprovante-585.jpg" srcset="assets/app/barbearia-390-pix-comprovante-390.jpg 390w, assets/app/barbearia-390-pix-comprovante-585.jpg 585w, assets/app/barbearia-390-pix-comprovante-780.jpg 780w" width="780"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Comprovante conferido</span> Valor, recebedor, data e ID da transação.</figcaption></figure></li>
+<li><figure><div class="frame frame--phone">
 
-<section aria-labelledby="how-title" class="section section--alt" id="como-funciona">
-<div class="wrap">
-<h2 id="how-title">Como funciona</h2>
-<ol class="steps">
-<li class="card">
-<span aria-hidden="true" class="steps__n">1</span>
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-calendar"></use></svg>
-<h3>Cadastre serviços, profissionais e horários</h3>
-<p class="muted">Preço e duração de cada serviço, quem faz o quê e o expediente de cada um. Pelo app.</p>
-</li>
-<li class="card">
-<span aria-hidden="true" class="steps__n">2</span>
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-qr"></use></svg>
-<h3>Conecte o WhatsApp do seu negócio</h3>
-<p class="muted">Leia um QR Code com o celular do negócio, como no WhatsApp Web, ou digite um código de pareamento.</p>
-</li>
-<li class="card">
-<span aria-hidden="true" class="steps__n">3</span>
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-phone"></use></svg>
-<h3>Seus clientes agendam sozinhos</h3>
-<p class="muted">E você acompanha tudo pelo app: agenda do dia, Pix para confirmar e avisos no seu WhatsApp.</p>
-</li>
-</ol>
-</div>
-</section>
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-ficha-cliente-390.avif 390w, assets/app/barbearia-claro-390-ficha-cliente-585.avif 585w, assets/app/barbearia-claro-390-ficha-cliente-780.avif 780w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-claro-390-ficha-cliente-390.webp 390w, assets/app/barbearia-claro-390-ficha-cliente-585.webp 585w, assets/app/barbearia-claro-390-ficha-cliente-780.webp 780w" type="image/webp"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-ficha-cliente-390.avif 390w, assets/app/barbearia-390-ficha-cliente-585.avif 585w, assets/app/barbearia-390-ficha-cliente-780.avif 780w" type="image/avif"/><source sizes="(max-width: 699px) 44vw, 220px" srcset="assets/app/barbearia-390-ficha-cliente-390.webp 390w, assets/app/barbearia-390-ficha-cliente-585.webp 585w, assets/app/barbearia-390-ficha-cliente-780.webp 780w" type="image/webp"/><img alt="Ficha do cliente com visitas, faltas, total gasto, pacotes e observações" decoding="async" height="1688" loading="lazy" sizes="(max-width: 699px) 44vw, 220px" src="assets/app/barbearia-390-ficha-cliente-585.jpg" srcset="assets/app/barbearia-390-ficha-cliente-390.jpg 390w, assets/app/barbearia-390-ficha-cliente-585.jpg 585w, assets/app/barbearia-390-ficha-cliente-780.jpg 780w" width="780"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Ficha do cliente</span> Visitas, faltas, total gasto e observações.</figcaption></figure></li>
+<li class="screens__wide"><figure><div class="frame frame--browser">
+<div aria-hidden="true" class="frame__bar"><span class="frame__dots"><i></i><i></i><i></i></span></div>
 
-<section aria-labelledby="features-title" class="section" id="recursos">
-<div class="wrap">
-<h2 id="features-title">Tudo o que o seu atendimento precisa</h2>
-<ul class="features">
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-clock"></use></svg>
-<h3>Atendimento 24 horas</h3>
-<p class="muted">Agenda, cancela e remarca pelo WhatsApp, inclusive à noite e no fim de semana.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-pix"></use></svg>
-<h3>Pix direto na sua conta</h3>
-<p class="muted">O cliente paga antecipado pela sua chave Pix, sem intermediário segurando o dinheiro. Você confirma o recebimento com um toque.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-bell"></use></svg>
-<h3>Lembretes contra faltas</h3>
-<p class="muted">O cliente recebe um lembrete antes do horário e confirma ou cancela na hora.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-chat"></use></svg>
-<h3>Avisos para o dono</h3>
-<p class="muted">Novo agendamento, cancelamento com o horário que ficou livre e resumo do dia, no seu WhatsApp.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-star"></use></svg>
-<h3>Pesquisa de satisfação</h3>
-<p class="muted">Depois de cada atendimento, o cliente dá uma nota de 1 a 5 e pode deixar um comentário.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-phone"></use></svg>
-<h3>App de gestão</h3>
-<p class="muted">Agenda por dia, por profissional ou por mês, clientes com histórico, equipe e expediente, bloqueios, avaliações e relatórios.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-chart"></use></svg>
-<h3>Financeiro e comissões</h3>
-<p class="muted">Faturamento, gastos, lucro e repasses de cada profissional, com exportação para planilha.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-shield"></use></svg>
-<h3>Controle de clientes</h3>
-<p class="muted">Exija sua aprovação para quem costuma faltar ou bloqueie o agendamento pelo robô, sem expor o motivo.</p>
-</li>
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-claro-1440-hoje-720.avif 720w, assets/app/barbearia-claro-1440-hoje-1080.avif 1080w, assets/app/barbearia-claro-1440-hoje-1440.avif 1440w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-claro-1440-hoje-720.webp 720w, assets/app/barbearia-claro-1440-hoje-1080.webp 1080w, assets/app/barbearia-claro-1440-hoje-1440.webp 1440w" type="image/webp"/><source sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-1440-hoje-720.avif 720w, assets/app/barbearia-1440-hoje-1080.avif 1080w, assets/app/barbearia-1440-hoje-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-1440-hoje-720.webp 720w, assets/app/barbearia-1440-hoje-1080.webp 1080w, assets/app/barbearia-1440-hoje-1440.webp 1440w" type="image/webp"/><img alt="Versão web: a tela Hoje com o menu lateral e o dia inteiro numa tela" decoding="async" height="900" loading="lazy" sizes="(max-width: 699px) 92vw, 460px" src="assets/app/barbearia-1440-hoje-1080.jpg" srcset="assets/app/barbearia-1440-hoje-720.jpg 720w, assets/app/barbearia-1440-hoje-1080.jpg 1080w, assets/app/barbearia-1440-hoje-1440.jpg 1440w" width="1440"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Hoje no computador</span> O dia inteiro numa tela, com o menu lateral.</figcaption></figure></li>
+<li class="screens__wide"><figure><div class="frame frame--browser">
+<div aria-hidden="true" class="frame__bar"><span class="frame__dots"><i></i><i></i><i></i></span></div>
+
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-claro-1440-comanda-720.avif 720w, assets/app/barbearia-claro-1440-comanda-1080.avif 1080w, assets/app/barbearia-claro-1440-comanda-1440.avif 1440w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-claro-1440-comanda-720.webp 720w, assets/app/barbearia-claro-1440-comanda-1080.webp 1080w, assets/app/barbearia-claro-1440-comanda-1440.webp 1440w" type="image/webp"/><source sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-1440-comanda-720.avif 720w, assets/app/barbearia-1440-comanda-1080.avif 1080w, assets/app/barbearia-1440-comanda-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-1440-comanda-720.webp 720w, assets/app/barbearia-1440-comanda-1080.webp 1080w, assets/app/barbearia-1440-comanda-1440.webp 1440w" type="image/webp"/><img alt="Versão web: comanda com os lançamentos de um lado e o pagamento do outro" decoding="async" height="900" loading="lazy" sizes="(max-width: 699px) 92vw, 460px" src="assets/app/barbearia-1440-comanda-1080.jpg" srcset="assets/app/barbearia-1440-comanda-720.jpg 720w, assets/app/barbearia-1440-comanda-1080.jpg 1080w, assets/app/barbearia-1440-comanda-1440.jpg 1440w" width="1440"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Comanda no computador</span> Lançamentos de um lado, pagamento do outro.</figcaption></figure></li>
+<li class="screens__wide"><figure><div class="frame frame--browser">
+<div aria-hidden="true" class="frame__bar"><span class="frame__dots"><i></i><i></i><i></i></span></div>
+
+<picture><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-claro-1440-relatorios-720.avif 720w, assets/app/barbearia-claro-1440-relatorios-1080.avif 1080w, assets/app/barbearia-claro-1440-relatorios-1440.avif 1440w" type="image/avif"/><source media="(prefers-color-scheme: light)" sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-claro-1440-relatorios-720.webp 720w, assets/app/barbearia-claro-1440-relatorios-1080.webp 1080w, assets/app/barbearia-claro-1440-relatorios-1440.webp 1440w" type="image/webp"/><source sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-1440-relatorios-720.avif 720w, assets/app/barbearia-1440-relatorios-1080.avif 1080w, assets/app/barbearia-1440-relatorios-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 699px) 92vw, 460px" srcset="assets/app/barbearia-1440-relatorios-720.webp 720w, assets/app/barbearia-1440-relatorios-1080.webp 1080w, assets/app/barbearia-1440-relatorios-1440.webp 1440w" type="image/webp"/><img alt="Versão web: relatórios por período, por barbeiro e por serviço" decoding="async" height="900" loading="lazy" sizes="(max-width: 699px) 92vw, 460px" src="assets/app/barbearia-1440-relatorios-1080.jpg" srcset="assets/app/barbearia-1440-relatorios-720.jpg 720w, assets/app/barbearia-1440-relatorios-1080.jpg 1080w, assets/app/barbearia-1440-relatorios-1440.jpg 1440w" width="1440"/></picture>
+</div><figcaption class="caption"><span class="caption__title">Relatórios</span> Por período, por barbeiro e por serviço.</figcaption></figure></li>
 </ul>
+<p class="note">Todas as telas com dados fictícios, capturadas do sistema em funcionamento.</p>
+</details>
 </div>
 </section>
 
-<section aria-labelledby="gestao-title" class="section section--alt" id="gestao">
-<div class="wrap">
-<h2 id="gestao-title">Do agendamento ao caixa, no celular e no computador</h2>
-<p class="muted intro">O mesmo sistema no app do celular, que continua funcionando sem internet, e na versão web, para o computador da recepção. Cada pessoa da equipe entra com o próprio login.</p>
-<div aria-label="Qual exemplo mostrar" class="phone-tabs show-tabs" role="group">
-<button aria-pressed="true" class="phone-tab" data-show="phone" type="button">App do celular</button>
-<button aria-pressed="false" class="phone-tab" data-show="web" type="button">Versão web</button>
-</div>
-<div class="showcase" data-show="phone">
-<figure class="showcase__item showcase__item--phone"><div class="pf-t--barbershop"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="280px" srcset="assets/app/barbearia-390-comanda-390.avif 390w, assets/app/barbearia-390-comanda-585.avif 585w, assets/app/barbearia-390-comanda-780.avif 780w" type="image/avif"/><source sizes="280px" srcset="assets/app/barbearia-390-comanda-390.webp 390w, assets/app/barbearia-390-comanda-585.webp 585w, assets/app/barbearia-390-comanda-780.webp 780w" type="image/webp"/><img alt="Comanda no app do celular (barbearia, tema escuro)" decoding="async" height="1688" loading="lazy" sizes="280px" src="assets/app/barbearia-390-comanda-585.jpg" srcset="assets/app/barbearia-390-comanda-390.jpg 390w, assets/app/barbearia-390-comanda-585.jpg 585w, assets/app/barbearia-390-comanda-780.jpg 780w" width="780"/></picture></div></div></div><div class="pf-t--beauty"><div class="pf-phone"><div class="pf-screen"><picture><source sizes="280px" srcset="assets/app/salao-390-comanda-390.avif 390w, assets/app/salao-390-comanda-585.avif 585w, assets/app/salao-390-comanda-780.avif 780w" type="image/avif"/><source sizes="280px" srcset="assets/app/salao-390-comanda-390.webp 390w, assets/app/salao-390-comanda-585.webp 585w, assets/app/salao-390-comanda-780.webp 780w" type="image/webp"/><img alt="Comanda no app do celular (salão de beleza, tema claro)" decoding="async" height="1688" loading="lazy" sizes="280px" src="assets/app/salao-390-comanda-585.jpg" srcset="assets/app/salao-390-comanda-390.jpg 390w, assets/app/salao-390-comanda-585.jpg 585w, assets/app/salao-390-comanda-780.jpg 780w" width="780"/></picture></div></div></div><figcaption class="small muted">App do celular: comanda com serviço e produto, pronta para receber. Ela também funciona sem internet e sincroniza depois.</figcaption></figure>
-<figure class="showcase__item showcase__item--web"><div class="pf-t--barbershop"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">SyncServ · versão web</span></div><picture><source sizes="(max-width: 959px) 92vw, 760px" srcset="assets/app/barbearia-1440-agenda-profissionais-720.avif 720w, assets/app/barbearia-1440-agenda-profissionais-1080.avif 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 959px) 92vw, 760px" srcset="assets/app/barbearia-1440-agenda-profissionais-720.webp 720w, assets/app/barbearia-1440-agenda-profissionais-1080.webp 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.webp 1440w" type="image/webp"/><img alt="Versão web com a agenda dos profissionais (barbearia, tema escuro)" decoding="async" height="900" loading="lazy" sizes="(max-width: 959px) 92vw, 760px" src="assets/app/barbearia-1440-agenda-profissionais-1080.jpg" srcset="assets/app/barbearia-1440-agenda-profissionais-720.jpg 720w, assets/app/barbearia-1440-agenda-profissionais-1080.jpg 1080w, assets/app/barbearia-1440-agenda-profissionais-1440.jpg 1440w" width="1440"/></picture></div></div><div class="pf-t--beauty"><div class="pf-browser"><div aria-hidden="true" class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">SyncServ · versão web</span></div><picture><source sizes="(max-width: 959px) 92vw, 760px" srcset="assets/app/salao-1440-agenda-profissionais-720.avif 720w, assets/app/salao-1440-agenda-profissionais-1080.avif 1080w, assets/app/salao-1440-agenda-profissionais-1440.avif 1440w" type="image/avif"/><source sizes="(max-width: 959px) 92vw, 760px" srcset="assets/app/salao-1440-agenda-profissionais-720.webp 720w, assets/app/salao-1440-agenda-profissionais-1080.webp 1080w, assets/app/salao-1440-agenda-profissionais-1440.webp 1440w" type="image/webp"/><img alt="Versão web com a agenda dos profissionais (salão de beleza, tema claro)" decoding="async" height="900" loading="lazy" sizes="(max-width: 959px) 92vw, 760px" src="assets/app/salao-1440-agenda-profissionais-1080.jpg" srcset="assets/app/salao-1440-agenda-profissionais-720.jpg 720w, assets/app/salao-1440-agenda-profissionais-1080.jpg 1080w, assets/app/salao-1440-agenda-profissionais-1440.jpg 1440w" width="1440"/></picture></div></div><figcaption class="small muted">Versão web: menu lateral, agenda por profissional lado a lado e atalhos de teclado.</figcaption></figure>
-</div>
-<ul class="features features--crm">
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-receipt"></use></svg>
-<h3>Comanda e caixa</h3>
-<p class="muted">Serviços, produtos, desconto e gorjeta na mesma conta. Pagamento dividido em Pix, dinheiro, débito e crédito, e o sinal já pago entra sozinho. Fechou, vai para o financeiro e para as comissões.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-box"></use></svg>
-<h3>Estoque</h3>
-<p class="muted">A venda na comanda e o consumo de cada serviço dão baixa sozinhos. Entradas, usos e ajustes ficam no histórico, e o estoque baixo aparece no app e no resumo do dia no seu WhatsApp.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-layers"></use></svg>
-<h3>Pacotes</h3>
-<p class="muted">Venda sessões de um serviço com preço e validade. O saldo é usado ao agendar, inclusive pelo robô, e o <span class="js-customer">cliente</span> consulta quanto falta pelo WhatsApp.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-repeat"></use></svg>
-<h3>Clube de assinatura</h3>
-<p class="muted">Planos mensais com serviços incluídos, com ou sem limite. No vencimento, o robô manda a cobrança com o Pix da sua chave e você confirma o recebimento no app. Relatório de assinantes e da receita mensal.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-lock"></use></svg>
-<h3>Sinal contra faltas</h3>
-<p class="muted">Peça um Pix antecipado por serviço, em valor fixo ou porcentagem. Sem pagamento no prazo, o horário é liberado. Cancelou com antecedência, o app marca o sinal para você devolver; faltou, fica com você.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-list"></use></svg>
-<h3>Lista de espera</h3>
-<p class="muted">Dia cheio? O robô oferece a lista de espera. Quando um horário abre, a primeira pessoa da fila que cabe nele é avisada pelo WhatsApp e a vaga fica reservada para ela por alguns minutos.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-id"></use></svg>
-<h3>Equipe com permissões</h3>
-<p class="muted">Cada pessoa com o seu login. A recepção cuida da agenda, do caixa e dos clientes, sem o financeiro completo. O <span class="js-pro">profissional</span> vê só a própria agenda e as próprias comissões.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-offline"></use></svg>
-<h3>App que funciona sem internet</h3>
-<p class="muted">No celular, agenda, comanda, estoque e lista de espera continuam funcionando sem conexão e sincronizam sozinhos quando a internet volta. Se o horário foi ocupado nesse meio tempo, o app avisa.</p>
-</li>
-<li class="card">
-<svg aria-hidden="true" class="ic ic--lg"><use href="#i-monitor"></use></svg>
-<h3>Versão web para a recepção</h3>
-<p class="muted">No computador, pelo navegador: menu lateral, agenda dos profissionais lado a lado, tabelas com busca e atalhos de teclado. A versão web funciona com internet.</p>
-</li>
-</ul>
-</div>
-</section>
-
-<section aria-labelledby="compare-title" class="section">
-<div class="wrap">
-<h2 id="compare-title">Sem SyncServ x Com SyncServ</h2>
-<div class="compare">
-<table>
-<caption class="sr-only">Comparação do dia a dia sem e com o SyncServ</caption>
-<thead>
-<tr><th scope="col">Sem SyncServ</th><th scope="col">Com SyncServ</th></tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Responder mensagens a toda hora, até durante o atendimento</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>O robô responde, mostra os horários livres e agenda</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Faltas sem aviso e horário perdido</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Lembrete com confirmação de presença e, se você quiser, sinal por Pix para segurar o horário</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Horário cancelado fica vago</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Lista de espera: a primeira pessoa da fila é avisada pelo WhatsApp</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Conferir comprovante de Pix no meio do atendimento</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Lista de Pix para confirmar no app, quando der</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Conta do atendimento feita na calculadora e anotada no caderno</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Comanda com serviços, produtos, desconto, gorjeta e pagamento dividido</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Estoque contado no olho, descoberto quando acaba</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Baixa sozinha na venda e no serviço, com alerta de estoque baixo</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Pacotes e mensalidades controlados de cabeça</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Saldo de pacotes e assinaturas no app, com cobrança da assinatura pelo WhatsApp</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Uma senha para todo mundo, que vê tudo</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Login para cada pessoa: recepção e profissional veem só o que precisam</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Internet caiu, a agenda parou</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>O app do celular continua funcionando e sincroniza quando a internet volta</td>
-</tr>
-<tr>
-<td><span class="compare__tag">Sem SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--no"><use href="#i-x"></use></svg>Agenda no caderno ou espalhada em conversas</td>
-<td><span class="compare__tag">Com SyncServ</span><svg aria-hidden="true" class="ic ic--sm ic--yes"><use href="#i-check"></use></svg>Agenda, clientes, caixa e financeiro no celular e no computador</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-
-<section aria-labelledby="calc-title" class="section section--alt" id="calculadora">
+<section aria-labelledby="calc-title" class="section" id="calculadora">
 <div class="wrap calc">
-<div>
-<h2 id="calc-title">Quanto as faltas e os horários vagos custam por mês?</h2>
-<p class="muted">Ajuste com os números do seu negócio. A conta é uma estimativa feita só com o que você informar aqui.</p>
+<div class="calc__intro">
+<h2 id="calc-title">Estimativa: quanto as faltas e os horários vagos podem representar por mês</h2>
+<p class="note">Troque os valores pelos da sua barbearia. A conta é feita só no seu navegador.</p>
 </div>
-<form aria-describedby="calc-formula" class="card calc__form">
-<div class="range">
-<label for="c-appts">Atendimentos por dia</label>
-<output for="c-appts" id="o-appts">12</output>
-<input id="c-appts" max="60" min="1" step="1" type="range" value="12"/>
+<form aria-describedby="calc-formula" class="card calc__form js-calc" novalidate="">
+<div class="field">
+<label for="c-appts">Atendimentos</label>
+<div class="stepper">
+<button aria-controls="c-appts" aria-label="Diminuir atendimentos por semana" class="btn btn--icon" data-step="-1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-minus"></use></svg></button>
+<input aria-describedby="c-appts-unit c-appts-err" id="c-appts" inputmode="numeric" max="400" min="1" name="appts" required="" step="1" type="number" value="60"/>
+<button aria-controls="c-appts" aria-label="Aumentar atendimentos por semana" class="btn btn--icon" data-step="1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-plus"></use></svg></button>
+<span class="unit" id="c-appts-unit">por semana</span>
 </div>
-<div class="range range--steps">
-<label for="c-price">Valor médio do serviço</label>
-<output for="c-price" id="o-price">R$ 50</output>
-<button aria-label="Diminuir R$ 5" class="step" data-for="c-price" data-step="-5" type="button">−</button>
-<input id="c-price" max="500" min="10" step="5" type="range" value="50"/>
-<button aria-label="Aumentar R$ 5" class="step" data-for="c-price" data-step="5" type="button">+</button>
+<p class="field__error" hidden="" id="c-appts-err"></p>
 </div>
-<div class="range">
-<label for="c-days">Dias trabalhados por mês</label>
-<output for="c-days" id="o-days">22</output>
-<input id="c-days" max="31" min="1" step="1" type="range" value="22"/>
+<div class="field">
+<label for="c-price">Valor médio por atendimento</label>
+<div class="stepper">
+<button aria-controls="c-price" aria-label="Diminuir valor médio em R$ 5" class="btn btn--icon" data-step="-1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-minus"></use></svg></button>
+<span class="unit unit--pre" id="c-price-unit">R$</span>
+<input aria-describedby="c-price-unit c-price-err" id="c-price" inputmode="numeric" max="500" min="10" name="price" required="" step="5" type="number" value="45"/>
+<button aria-controls="c-price" aria-label="Aumentar valor médio em R$ 5" class="btn btn--icon" data-step="1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-plus"></use></svg></button>
 </div>
-<div class="range">
-<label for="c-loss">Faltas ou horários vagos</label>
-<output for="c-loss" id="o-loss">10%</output>
-<input id="c-loss" max="60" min="0" step="1" type="range" value="10"/>
+<p class="field__error" hidden="" id="c-price-err"></p>
 </div>
-<div aria-live="polite" class="calc__result">
-<span>Você deixa de faturar por mês, aproximadamente:</span>
-<strong id="calc-total">R$ 1.320</strong>
+<div class="field">
+<label for="c-loss">Horários perdidos com faltas ou vagos</label>
+<div class="stepper">
+<button aria-controls="c-loss" aria-label="Diminuir horários perdidos em 1 ponto percentual" class="btn btn--icon" data-step="-1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-minus"></use></svg></button>
+<input aria-describedby="c-loss-unit c-loss-err" id="c-loss" inputmode="numeric" max="50" min="0" name="loss" required="" step="1" type="number" value="10"/>
+<button aria-controls="c-loss" aria-label="Aumentar horários perdidos em 1 ponto percentual" class="btn btn--icon" data-step="1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-plus"></use></svg></button>
+<span class="unit" id="c-loss-unit">% dos atendimentos</span>
 </div>
-<a class="btn btn--cta js-cta calc__cta" data-msg="trial" href="#cotacao">Pedir cotação</a>
-<p class="small muted" id="calc-formula">Fórmula: atendimentos por dia × valor médio × dias por mês × porcentagem de faltas ou vagos. Estimativa com os números que você informou; não é uma promessa de resultado.</p>
+<p class="field__error" hidden="" id="c-loss-err"></p>
+</div>
+<div class="field">
+<label for="c-rec">Parte que daria para recuperar</label>
+<div class="stepper">
+<button aria-controls="c-rec" aria-label="Diminuir a parte recuperada em 5 pontos percentuais" class="btn btn--icon" data-step="-1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-minus"></use></svg></button>
+<input aria-describedby="c-rec-unit c-rec-why c-rec-err" id="c-rec" inputmode="numeric" max="100" min="0" name="rec" required="" step="5" type="number" value="25"/>
+<button aria-controls="c-rec" aria-label="Aumentar a parte recuperada em 5 pontos percentuais" class="btn btn--icon" data-step="1" type="button"><svg aria-hidden="true" class="ic"><use href="#i-plus"></use></svg></button>
+<span class="unit" id="c-rec-unit">%</span>
+</div>
+<p class="note" id="c-rec-why">Padrão de 25%, de propósito conservador: lembrete e fila de espera não evitam toda falta, e nem todo horário vago encontra cliente.</p>
+<p class="field__error" hidden="" id="c-rec-err"></p>
+</div>
+<div aria-live="polite" class="calc__results">
+<div class="result">
+<span class="result__label">Faturamento potencial não realizado</span>
+<strong class="result__value" id="calc-lost">R$ 1.161</strong>
+<span class="result__unit">por mês</span>
+</div>
+<div class="result result--main">
+<span class="result__label">Estimativa de recuperação</span>
+<strong class="result__value" id="calc-rec">R$ 290</strong>
+<span class="result__unit">por mês</span>
+</div>
+</div>
+<p class="note calc__hyp">Supõe que os horários perdidos poderiam ter sido preenchidos e pagos. É uma estimativa, não um resultado garantido.</p>
+<p class="note" id="calc-formula">Conta: atendimentos por semana × 4,3 semanas × valor médio × horários perdidos; a recuperação aplica a parte informada sobre esse valor.</p>
+<p class="calc__next"><a href="#lembretes">Ver como o sistema ajuda a reduzir faltas</a></p>
 </form>
 </div>
 </section>
 
-
-
-
-
-
-
-<section aria-labelledby="about-title" class="section" id="sobre">
+<section aria-labelledby="trust-title" class="section section--alt" id="confianca">
 <div class="wrap">
-<h2 id="about-title">Sobre o projeto</h2>
-<p class="lead">Projeto desenvolvido por Matheus Souza, do servidor ao app. O SyncServ atende vários segmentos; o <strong>Klipper</strong> é a versão para barbearias.</p>
-<div class="pf-about">
+<h2 id="trust-title">Seus dados, quem faz e os limites de hoje</h2>
+<ul class="trust">
+<li><svg aria-hidden="true" class="ic"><use href="#i-shield"></use></svg><div><h3>Cada barbearia só vê os próprios dados</h3><p>Os dados de uma barbearia não aparecem para outra, e há testes automáticos que tentam o contrário.</p></div></li>
+<li><svg aria-hidden="true" class="ic"><use href="#i-lock"></use></svg><div><h3>Não guardamos dados de cartão</h3><p>O sistema não recebe pagamentos com cartão: no caixa, você só registra como o cliente pagou.</p></div></li>
+<li><svg aria-hidden="true" class="ic"><use href="#i-pix"></use></svg><div><h3>O dinheiro não passa pelo sistema</h3><p>O Pix vai direto para a chave da barbearia; o sistema gera a cobrança e confere o comprovante.</p></div></li>
+<li><svg aria-hidden="true" class="ic"><use href="#i-id"></use></svg><div><h3>O cliente controla os dados dele</h3><p>Pelo próprio WhatsApp, ele pode ver ou pedir para apagar os dados, como prevê a LGPD.</p></div></li>
+</ul>
+<div class="trust__grid">
+<div class="card about" id="quem-faz">
+<h3>Quem está por trás</h3>
+<p>Projeto desenvolvido por Matheus Souza. Em fase de piloto: as telas e conversas usam dados fictícios.</p>
+<p>O projeto serve como portfólio e está aberto a barbearias interessadas em testar.</p>
+<p><a href="como-foi-feito.html">Detalhes técnicos do projeto</a></p>
+</div>
+<div class="card" id="limites">
+<h3>Limitações que você precisa saber</h3>
+<ul class="limits">
+<li><strong>WhatsApp:</strong> a conexão é feita como um aparelho conectado (igual ao WhatsApp Web), não pela API oficial para empresas.</li>
+<li><strong>Pix:</strong> o pagamento vai direto para a chave da barbearia. O sistema confere o comprovante enviado pelo cliente, mas a confirmação final é do dono.</li>
+<li><strong>IA (opcional):</strong> responde dúvidas e ajuda a marcar; horários, preços e regras vêm do sistema e nada é marcado sem a confirmação do cliente.</li>
+<li><strong>Sem internet:</strong> só o app do celular continua funcionando; a versão web e as mensagens do WhatsApp precisam de conexão.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="niche-title" class="band band--niches" id="nichos">
+<div class="wrap niches">
+<ul aria-hidden="true" class="niches__icons">
+<li><img alt="" decoding="async" height="32" loading="lazy" src="assets/nichos/beleza.svg" width="32"/></li>
+<li><img alt="" decoding="async" height="32" loading="lazy" src="assets/nichos/pet.svg" width="32"/></li>
+<li><img alt="" decoding="async" height="32" loading="lazy" src="assets/nichos/saude.svg" width="32"/></li>
+<li><img alt="" decoding="async" height="32" loading="lazy" src="assets/nichos/fitness.svg" width="32"/></li>
+</ul>
 <div>
-<h3>O problema</h3>
-<p class="muted">Barbearias, salões, pet shops, clínicas e estúdios perdem tempo respondendo o WhatsApp no meio do atendimento, sofrem com faltas e controlam a agenda, o caixa e o estoque no caderno. O SyncServ junta o atendimento automático no WhatsApp e a gestão do dia a dia num sistema só.</p>
-<h3>Principais funções</h3>
-<ul class="pf-list">
-<li>Bot no WhatsApp com IA (opcional) e menu numerado: agenda, cancela, remarca e cobra o Pix</li>
-<li>Agenda por dia, por profissional e por mês, com agendamento rápido</li>
-<li>Comanda e caixa com pagamento dividido, desconto e gorjeta</li>
-<li>Estoque com baixa automática, pacotes e clube de assinatura</li>
-<li>Pix pela chave do negócio, com leitura e conferência do comprovante</li>
-<li>App que funciona sem internet no celular e versão web para a recepção</li>
-<li>Multi-tenant: vários negócios, cada um com a sua equipe e os seus papéis</li>
-</ul>
-<h3>Stack</h3>
-<ul class="pf-chips">
-<li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>React Native</li><li>Expo</li><li>react-native-web</li><li>Evolution API</li><li>Gemini</li><li>Docker</li><li>Caddy</li>
-</ul>
-<h3>Destaques técnicos</h3>
-<ul class="pf-list">
-<li><strong>Sincronização offline:</strong> banco local criptografado (SQLCipher), fila de operações com idempotência, versão por registro e resolução de conflitos; o que não pôde ser aplicado aparece para a pessoa decidir.</li>
-<li><strong>Isolamento entre negócios:</strong> cada consulta é limitada ao negócio e ao papel de quem pede (dono, recepção, profissional), com testes que tentam ler dados de outro negócio.</li>
-<li><strong>Testes de segurança:</strong> isolamento, injeção, validação de entrada, abuso, sessões com 2FA e refresh token rotativo, webhooks e exposição de configuração, mais varredura de segredos nos pacotes publicados.</li>
-<li><strong>Acessibilidade WCAG 2.2 AA:</strong> contraste, alvos de toque de 48 px, leitor de tela e teclado, conferidos com axe e Lighthouse.</li>
-</ul>
-<p class="pf-private">Código-fonte privado. Demonstração disponível mediante solicitação.</p>
-<p><a href="https://github.com/souzza-matheus/klipper-site" rel="noopener" target="_blank">Ver o repositório</a></p>
-</div>
-<figure class="card">
-<svg aria-labelledby="arch-t arch-d" class="pf-arch" role="img" viewbox="0 0 420 470">
-<title id="arch-t">Arquitetura do SyncServ</title>
-<desc id="arch-d">O cliente conversa pelo WhatsApp, que chega ao servidor pela Evolution API. O app do celular e a versão web falam com a API pelo Caddy, com HTTPS. No servidor, a API em FastAPI cuida do bot, da agenda e da sincronização, guarda os dados no PostgreSQL e usa o Gemini para entender as mensagens e ler comprovantes.</desc>
-<defs><marker id="arw" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="9" refy="5" viewbox="0 0 10 10"><path class="ar" d="M0 0L10 5L0 10z"></path></marker></defs>
-<rect class="box" height="62" rx="10" width="128" x="4" y="6"></rect><text class="t" text-anchor="middle" x="68" y="32">Cliente</text><text class="s" text-anchor="middle" x="68" y="52">no WhatsApp</text>
-<rect class="box" height="62" rx="10" width="128" x="146" y="6"></rect><text class="t" text-anchor="middle" x="210" y="32">App celular</text><text class="s" text-anchor="middle" x="210" y="52">Expo, offline</text>
-<rect class="box" height="62" rx="10" width="128" x="288" y="6"></rect><text class="t" text-anchor="middle" x="352" y="32">Versão web</text><text class="s" text-anchor="middle" x="352" y="52">react-native-web</text>
-<rect class="zone" height="250" rx="14" width="416" x="2" y="104"></rect><text class="s" x="14" y="344">Servidor (Docker)</text>
-<rect class="box" height="58" rx="10" width="170" x="16" y="118"></rect><text class="t" text-anchor="middle" x="101" y="142">Evolution API</text><text class="s" text-anchor="middle" x="101" y="162">ponte do WhatsApp</text>
-<rect class="box" height="58" rx="10" width="170" x="234" y="118"></rect><text class="t" text-anchor="middle" x="319" y="142">Caddy</text><text class="s" text-anchor="middle" x="319" y="162">HTTPS e cabeçalhos</text>
-<rect class="box box--srv" height="64" rx="10" width="300" x="60" y="212"></rect><text class="t" text-anchor="middle" x="210" y="238">API FastAPI</text><text class="s" text-anchor="middle" x="210" y="258">bot, agenda, comanda e sincronização</text>
-<rect class="box" height="62" rx="10" width="180" x="16" y="392"></rect><text class="t" text-anchor="middle" x="106" y="418">PostgreSQL</text><text class="s" text-anchor="middle" x="106" y="438">SQLAlchemy e Alembic</text>
-<rect class="box" height="62" rx="10" width="180" x="224" y="392"></rect><text class="t" text-anchor="middle" x="314" y="418">Gemini</text><text class="s" text-anchor="middle" x="314" y="438">IA: mensagens e Pix</text>
-<path class="ln" d="M68 68V118" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-<path class="ln" d="M210 68L290 118" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-<path class="ln" d="M352 68L340 118" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-<path class="ln" d="M101 176L160 212" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-<path class="ln" d="M319 176L260 212" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-<path class="ln" d="M140 276L106 392" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-<path class="ln" d="M280 276L314 392" marker-end="url(#arw)" marker-start="url(#arw)"></path>
-</svg>
-<figcaption class="small muted">Arquitetura: WhatsApp pela Evolution API, app e versão web pelo Caddy, API em FastAPI com PostgreSQL e Gemini.</figcaption>
-</figure>
+<h2 class="niches__title" id="niche-title">A mesma plataforma também atende salões de beleza, pet shops, clínicas e estúdios.</h2>
+<p class="note">O SyncServ é a plataforma; o Klipper é a edição para barbearias. No app, cada segmento tem as próprias cores e o próprio vocabulário.</p>
 </div>
 </div>
-</section><section aria-labelledby="faq-title" class="section section--alt" id="duvidas">
+</section>
+
+<section aria-labelledby="faq-title" class="section" id="duvidas">
 <div class="wrap faq">
 <h2 id="faq-title">Perguntas frequentes</h2>
 <details>
-<summary>Preciso de um número novo de WhatsApp?</summary>
-<p>Recomendamos um número exclusivo do negócio, separado do seu WhatsApp pessoal. O robô atende por esse número, e os avisos para você chegam no seu número pessoal. A conexão funciona como um aparelho conectado (igual ao WhatsApp Web): o celular do negócio continua com o WhatsApp normal.</p>
+<summary>Meu cliente precisa baixar algum app?</summary>
+<p>Não. Ele conversa com o WhatsApp da barbearia como sempre. O app é só para você e a sua equipe.</p>
 </details>
 <details>
-<summary>Meu cliente precisa baixar algum app?</summary>
-<p>Não. Ele conversa com o seu WhatsApp como sempre. O app é só para você e sua equipe.</p>
+<summary>Preciso de um número novo de WhatsApp?</summary>
+<p>O ideal é um número só da barbearia, separado do seu pessoal. A conexão é feita como um aparelho conectado (igual ao WhatsApp Web), não pela API oficial para empresas: o celular da barbearia continua com o WhatsApp normal.</p>
 </details>
 <details>
 <summary>Como funciona o Pix?</summary>
-<p>O robô gera o Pix "copia e cola" com a sua chave. O dinheiro vai direto para a sua conta, sem intermediário. Quando o cliente avisa que pagou, você confere no extrato e confirma com um toque no app (ou pelo WhatsApp), e o cliente recebe a confirmação.</p>
+<p>O pagamento vai direto para a chave da barbearia. O sistema confere o comprovante enviado pelo cliente, mas a confirmação final é do dono: você confere no extrato e confirma com um toque no app.</p>
 </details>
 <details>
-<summary>O robô entende o que o cliente escreve?</summary>
-<p>Sim, se você ligar o atendimento com IA (opcional): o cliente escreve do jeito dele e a IA entende o pedido. A IA pode errar; os preços, os serviços e as regras vêm do seu cadastro, e agendar, cancelar ou remarcar só acontece depois de o cliente confirmar. Com a IA desligada, o robô atende pelo menu numerado. O cliente pode pedir para falar com uma pessoa a qualquer momento.</p>
-</details>
-<details>
-<summary>O robô confere o comprovante do Pix?</summary>
-<p>Ele lê o comprovante que o cliente manda (valor, data, recebedor e ID da transação) e mostra se confere com a cobrança. É uma pré-conferência: comprovante pode ser falsificado, então quem confirma o pagamento é você, olhando o extrato. O SyncServ não acessa a sua conta no banco.</p>
-</details>
-
-<details>
-<summary>Funciona para mais de um profissional?</summary>
-<p>Sim. Cada profissional fica com o seu expediente e os serviços que faz. O cliente escolhe com quem quer ser atendido ou o primeiro disponível, e cada profissional recebe os avisos da própria agenda.</p>
+<summary>O que a IA faz?</summary>
+<p>A IA é opcional e precisa ser ativada pela barbearia. Ela responde dúvidas e ajuda a marcar; horários, preços e regras vêm do sistema e nada é marcado sem a confirmação do cliente. A IA pode errar, e o cliente pode pedir para falar com uma pessoa a qualquer momento. Desligada, o atendimento segue pelo menu numerado.</p>
 </details>
 <details>
 <summary>Funciona sem internet?</summary>
-<p>O app do celular, sim. Agenda, comanda, estoque, lista de espera e bloqueios continuam funcionando sem conexão, e o app mostra o que ainda falta enviar. Quando a internet volta, tudo é sincronizado sozinho. Se alguém ocupou o mesmo horário nesse meio tempo, o app avisa em "Precisa da sua atenção", e a mensagem de WhatsApp para o cliente só sai depois que o servidor aceita o agendamento. Pix, financeiro, relatórios e configurações precisam de internet. O atendimento pelo WhatsApp não depende do seu celular nem da sua conexão: ele roda no servidor do SyncServ, que fica sempre online.</p>
+<p>O app do celular, sim. Funciona sem internet: ver a agenda, abrir e fechar comanda e registrar recebimento. Precisa de internet: mensagens do WhatsApp, Pix novo e sincronizar com outros aparelhos. Tudo sincroniza quando a conexão volta. A versão web, no computador, precisa de internet.</p>
 </details>
 <details>
-<summary>Posso usar no computador?</summary>
-<p>Sim. A versão web abre no navegador do computador da recepção, com menu lateral, agenda dos profissionais lado a lado, tabelas com busca e atalhos de teclado (N para novo agendamento, C para abrir comanda, B para buscar cliente). Ela precisa de internet e não guarda os dados dos clientes no computador.</p>
+<summary>Funciona com mais de um barbeiro?</summary>
+<p>Sim. Cada barbeiro tem o próprio expediente, os serviços que faz, o próprio login e os avisos da própria agenda. O cliente escolhe com quem quer cortar ou o primeiro disponível.</p>
 </details>
 <details>
-<summary>Cada profissional tem seu acesso?</summary>
-<p>Sim. Você convida cada pessoa como recepção ou profissional pelo e-mail dela; ela abre o link do convite e cria a própria senha. O profissional vê só a própria agenda, os clientes que atendeu e as próprias comissões. A recepção cuida da agenda, do caixa e dos clientes, mas não vê o financeiro completo nem o custo dos produtos. Desativar alguém encerra o acesso na hora.</p>
+<summary>Quanto custa?</summary>
+<p>Ainda não há tabela pública: o projeto está em fase de piloto, e a proposta depende do número de barbeiros e do que a barbearia vai usar. Peça uma cotação.</p>
 </details>
 <details>
-<summary>Como funcionam pacotes e assinaturas?</summary>
-<p>Pacote: você vende um número de sessões de um serviço, com preço e validade. Cada atendimento usa uma sessão; cancelamento devolve a sessão e falta não devolve. Assinatura: plano mensal com serviços incluídos, com ou sem limite por mês. No vencimento, o robô manda a cobrança com o Pix da sua chave pelo WhatsApp e você confirma o recebimento no app; se o pagamento atrasar além do prazo que você definir, os benefícios ficam suspensos até ele chegar. O cliente consulta o saldo pelo WhatsApp.</p>
+<summary>O que quer dizer "fase de piloto"?</summary>
+<p>O sistema funciona e está aberto a barbearias interessadas em testar. As telas e conversas deste site usam dados fictícios.</p>
+</details>
+<details>
+<summary>Como é a demonstração ao vivo?</summary>
+<p>Combinamos um horário pelo WhatsApp e você conversa com o atendimento, como se fosse um cliente, usando um número de teste. Enquanto isso, eu mostro o que aparece no app do dono.</p>
 </details>
 <details>
 <summary>Meus dados e os dos meus clientes ficam seguros?</summary>
-<p>Os dados são usados só para o agendamento e o atendimento do seu negócio. Pela LGPD (Lei Geral de Proteção de Dados), quem decide sobre os dados dos seus clientes é o seu negócio, e o SyncServ trata esses dados em seu nome, com contrato próprio (o Acordo de Tratamento de Dados). O cliente pode ver ou pedir a exclusão dos dados dele pelo próprio WhatsApp, e você atende pelo app. Cada pessoa da equipe vê só o que o papel dela permite. No celular, a cópia usada sem internet fica criptografada e é apagada ao sair da conta.</p>
-</details>
-<details>
-<summary>Quanto tempo leva para começar?</summary>
-<p>Dá para começar no mesmo dia: cadastre seus serviços, profissionais e horários no app e conecte o WhatsApp lendo um QR Code.</p>
+<p>Os dados são usados só para o agendamento e o atendimento da barbearia, e cada barbearia vê só os próprios. Pela LGPD, quem decide sobre os dados dos clientes é a barbearia; o sistema trata esses dados em nome dela. O cliente pode ver ou pedir a exclusão dos dados pelo próprio WhatsApp. No celular, a cópia usada sem internet fica criptografada e é apagada ao sair da conta.</p>
 </details>
 </div>
 </section>
 
+<section aria-labelledby="final-title" class="section section--alt final" id="contato">
+<div class="wrap final__in">
+<h2 id="final-title">Vamos ver se o Klipper serve para a sua barbearia</h2>
+<p class="lead">Você abre uma conversa no WhatsApp (ou envia um e-mail) com uma mensagem pronta. Eu respondo, entendo como a sua barbearia funciona e envio uma proposta.</p>
 
-<section aria-labelledby="quote-title" class="section final" id="cotacao">
-<div class="wrap pf-quote">
-<h2 id="quote-title">Gostou? Peça uma cotação</h2>
-<p class="lead muted">Cada negócio tem um tamanho e uma rotina. Me conta como funciona o seu e eu te envio uma proposta.</p>
-<div class="pf-quote__actions"><a class="btn btn--cta" href="mailto:matheus.ramirez019@gmail.com?subject=Cota%C3%A7%C3%A3o%20SyncServ"><svg aria-hidden="true" class="ic ic--sm"><use href="#i-mail"></use></svg> E-mail</a><a class="btn btn--cta js-quote-wa" data-number="5531995887186" href="https://wa.me/5531995887186?text=Ol%C3%A1%21%20Vi%20o%20SyncServ%20e%20quero%20uma%20cota%C3%A7%C3%A3o.%20Meu%20neg%C3%B3cio%20%C3%A9%3A%20Barbearia" rel="noopener" target="_blank"><svg aria-hidden="true" class="ic ic--sm"><use href="#i-chat"></use></svg> WhatsApp</a><a class="btn btn--cta" href="https://www.linkedin.com/in/matheus-souza-a07200200/" rel="noopener" target="_blank"><svg aria-hidden="true" class="ic ic--sm"><use href="#i-users"></use></svg> LinkedIn</a></div>
+
+<div class="actions actions--center">
+<a class="btn btn--primary js-quote" href="https://wa.me/5531995887186?text=Ol%C3%A1%21%20Vi%20o%20Klipper%20e%20quero%20uma%20cota%C3%A7%C3%A3o%20para%20a%20minha%20barbearia." rel="noopener" target="_blank">Pedir cotação</a>
+<a aria-describedby="live-what" class="btn btn--secondary js-live" href="https://wa.me/5531995887186?text=Ol%C3%A1%21%20Vi%20o%20Klipper%20e%20quero%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20ao%20vivo." rel="noopener" target="_blank">Agendar demonstração ao vivo</a>
+</div>
+<p class="note" id="live-what">Quer ver funcionando no seu WhatsApp? Agende uma demonstração ao vivo: é uma chamada combinada pelo WhatsApp, usando um número de teste.</p>
+<p class="note js-email-alt">Prefere e-mail? Escreva para <a class="js-email" href="mailto:matheus.ramirez019@gmail.com?subject=Cota%C3%A7%C3%A3o%20Klipper">matheus.ramirez019@gmail.com</a>.</p>
 </div>
 </section>
 </main>
-
-
-<footer class="footer pf-footer">
+<footer class="footer">
 <div class="wrap footer__grid">
 <div>
-<img alt="SyncServ" decoding="async" height="44" loading="lazy" src="assets/syncserv-logo.svg" width="130"/>
-<p class="muted small">SyncServ · 2026 · Projeto pessoal de portfólio de Matheus Souza. As imagens mostram o app com dados fictícios.</p>
+<p class="brand brand--footer"><img alt="" class="brand__mark" decoding="async" height="28" loading="lazy" src="assets/nichos/barbearia.svg" width="28"/><span class="brand__text"><span class="brand__name">Klipper</span><span class="brand__by">uma edição SyncServ</span></span></p>
+<p class="note">Projeto desenvolvido por Matheus Souza. Em fase de piloto: as telas e conversas usam dados fictícios.</p>
 </div>
-<nav aria-label="Contatos"><ul class="footer__links"><li><a class="" href="mailto:matheus.ramirez019@gmail.com?subject=Cota%C3%A7%C3%A3o%20SyncServ"><svg aria-hidden="true" class="ic ic--sm"><use href="#i-mail"></use></svg> E-mail</a></li><li><a class="js-quote-wa" data-number="5531995887186" href="https://wa.me/5531995887186?text=Ol%C3%A1%21%20Vi%20o%20SyncServ%20e%20quero%20uma%20cota%C3%A7%C3%A3o.%20Meu%20neg%C3%B3cio%20%C3%A9%3A%20Barbearia" rel="noopener" target="_blank"><svg aria-hidden="true" class="ic ic--sm"><use href="#i-chat"></use></svg> WhatsApp</a></li><li><a class="" href="https://www.linkedin.com/in/matheus-souza-a07200200/" rel="noopener" target="_blank"><svg aria-hidden="true" class="ic ic--sm"><use href="#i-users"></use></svg> LinkedIn</a></li></ul></nav>
+<nav aria-label="Rodapé">
+<ul class="footer__links js-footer-links">
+<li><a href="como-foi-feito.html">Detalhes técnicos do projeto</a></li>
+
+
+<li><a href="mailto:matheus.ramirez019@gmail.com?subject=Contato%20pelo%20site%20do%20Klipper">E-mail</a></li><li><a href="https://wa.me/5531995887186" rel="noopener" target="_blank">WhatsApp</a></li><li><a href="https://www.linkedin.com/in/matheus-souza-a07200200/" rel="noopener" target="_blank">LinkedIn</a></li></ul>
+</nav>
 </div>
 </footer>
 
+<script id="demo-data" type="application/json">{"_aviso":"Dados FICTÍCIOS da demonstração. Fonte única do simulador, das legendas das capturas, da calculadora e dos textos de exemplo (scripts/portfolio/check_content.mjs confere a página contra este arquivo). São os mesmos do backend/app/seed.py (Barbearia Demo), usados nas capturas e nas conversas gravadas.","barbearia":"Barbearia Demo","cliente":"Rafael","profissionais":["João","Pedro"],"servicos":[{"nome":"Corte","duracao_min":30,"preco":40},{"nome":"Barba","duracao_min":30,"preco":30},{"nome":"Corte + Barba","duracao_min":60,"preco":65}],"funcionamento":{"_dias":"0 = domingo ... 6 = sábado; dia sem faixas = fechado","0":[],"1":[["09:00","12:00"],["13:00","19:00"]],"2":[["09:00","12:00"],["13:00","19:00"]],"3":[["09:00","12:00"],["13:00","19:00"]],"4":[["09:00","12:00"],["13:00","19:00"]],"5":[["09:00","12:00"],["13:00","19:00"]],"6":[["09:00","12:00"]]},"horarios_livres":["09:30","10:30","14:30","16:00","17:30"],"calculadora":{"atendimentos_por_semana":{"padrao":60,"min":1,"max":400,"passo":1},"ticket_medio":{"padrao":45,"min":10,"max":500,"passo":5},"percentual_perdido":{"padrao":10,"min":0,"max":50,"passo":1},"percentual_recuperado":{"padrao":25,"min":0,"max":100,"passo":5},"semanas_por_mes":4.3}}</script>
 
-<dialog aria-label="Tela ampliada" class="pf-lightbox">
-<div class="pf-lightbox__in">
-<div class="pf-lightbox__bar">
-<p aria-live="polite" class="pf-lightbox__count"></p>
-<button aria-label="Tela anterior" class="pf-lightbox__btn js-lb-prev" type="button">‹</button>
-<button aria-label="Próxima tela" class="pf-lightbox__btn js-lb-next" type="button">›</button>
-<button aria-label="Fechar" class="pf-lightbox__btn js-lb-close" type="button"><svg aria-hidden="true" class="ic"><use href="#i-x"></use></svg></button>
-</div>
-<div class="pf-lightbox__img"><picture><source type="image/avif"/><source type="image/webp"/><img alt="" height="1" src="data:," width="1"/></picture></div>
-<p class="pf-lightbox__cap"></p>
-</div>
-</dialog>
-<script defer="" src="main.js?v=99621c8e9b"></script>
-<script defer="" src="portfolio.js?v=4feb20b07a"></script>
+
+<script defer="" src="main.js?v=3ac8236a36"></script>
 </body>
 </html>

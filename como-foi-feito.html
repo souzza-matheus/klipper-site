@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Como foi feito | Klipper, uma edição SyncServ</title>
+<meta content="Detalhes técnicos do Klipper e da plataforma SyncServ: stack, arquitetura, sincronização offline, isolamento entre negócios, testes e acessibilidade." name="description"/>
+<link href="https://souzza-matheus.github.io/klipper-site/como-foi-feito.html" rel="canonical"/>
+<meta content="dark light" name="color-scheme"/>
+<meta content="#0F172A" media="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="#F8FAFC" media="(prefers-color-scheme: light)" name="theme-color"/>
+<link href="assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link as="font" crossorigin="" href="assets/fonts/plus-jakarta-sans-800-latin.woff2" rel="preload" type="font/woff2"/>
+
+<link href="styles.css?v=ef00fd88c0" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topbar">
+<div class="wrap topbar__in">
+<a class="brand" href="index.html">
+<img alt="" class="brand__mark" height="28" src="assets/nichos/barbearia.svg" width="28"/>
+<span class="brand__text"><span class="brand__name">Klipper</span><span class="sr-only">, </span><span class="brand__by">uma edição SyncServ</span></span>
+</a>
+<a class="btn btn--secondary btn--sm" href="index.html">Voltar ao site</a>
+</div>
+</header>
+<main class="wrap page" id="conteudo">
+<p class="seal seal--status">Projeto autoral em fase de piloto</p>
+<h1>Como foi feito</h1>
+<p>Projeto desenvolvido por Matheus Souza, do servidor ao app. O SyncServ é a plataforma, que atende vários segmentos; o Klipper é a edição para barbearias. Em fase de piloto: as telas e conversas do site usam dados fictícios.</p>
+<h2>Stack</h2>
+<ul class="chips">
+<li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Alembic</li><li>React Native</li><li>Expo</li><li>react-native-web</li><li>Evolution API</li><li>Gemini</li><li>Docker</li><li>Caddy</li>
+</ul>
+<h2>Arquitetura</h2>
+<figure>
+<svg aria-labelledby="arch-t arch-d" class="arch" role="img" viewbox="0 0 420 470">
+<title id="arch-t">Arquitetura do SyncServ</title>
+<desc id="arch-d">O cliente conversa pelo WhatsApp, que chega ao servidor pela Evolution API. O app do celular e a versão web falam com a API pelo Caddy, com HTTPS. No servidor, a API em FastAPI cuida do bot, da agenda e da sincronização, guarda os dados no PostgreSQL e usa o Gemini para entender as mensagens e ler comprovantes.</desc>
+<defs><marker id="arw" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="9" refy="5" viewbox="0 0 10 10"><path class="ar" d="M0 0L10 5L0 10z"></path></marker></defs>
+<rect class="box" height="62" rx="10" width="128" x="4" y="6"></rect><text class="t" text-anchor="middle" x="68" y="32">Cliente</text><text class="s" text-anchor="middle" x="68" y="52">no WhatsApp</text>
+<rect class="box" height="62" rx="10" width="128" x="146" y="6"></rect><text class="t" text-anchor="middle" x="210" y="32">App celular</text><text class="s" text-anchor="middle" x="210" y="52">Expo, offline</text>
+<rect class="box" height="62" rx="10" width="128" x="288" y="6"></rect><text class="t" text-anchor="middle" x="352" y="32">Versão web</text><text class="s" text-anchor="middle" x="352" y="52">react-native-web</text>
+<rect class="zone" height="250" rx="14" width="416" x="2" y="104"></rect><text class="s" x="14" y="344">Servidor (Docker)</text>
+<rect class="box" height="58" rx="10" width="170" x="16" y="118"></rect><text class="t" text-anchor="middle" x="101" y="142">Evolution API</text><text class="s" text-anchor="middle" x="101" y="162">ponte do WhatsApp</text>
+<rect class="box" height="58" rx="10" width="170" x="234" y="118"></rect><text class="t" text-anchor="middle" x="319" y="142">Caddy</text><text class="s" text-anchor="middle" x="319" y="162">HTTPS e cabeçalhos</text>
+<rect class="box box--srv" height="64" rx="10" width="340" x="40" y="212"></rect><text class="t" text-anchor="middle" x="210" y="238">API FastAPI</text><text class="s" text-anchor="middle" x="210" y="258">bot, agenda, comanda e sincronização</text>
+<rect class="box" height="62" rx="10" width="180" x="16" y="392"></rect><text class="t" text-anchor="middle" x="106" y="418">PostgreSQL</text><text class="s" text-anchor="middle" x="106" y="438">SQLAlchemy e Alembic</text>
+<rect class="box" height="62" rx="10" width="180" x="224" y="392"></rect><text class="t" text-anchor="middle" x="314" y="418">Gemini</text><text class="s" text-anchor="middle" x="314" y="438">IA: mensagens e Pix</text>
+<path class="ln" d="M68 68V118" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+<path class="ln" d="M210 68L290 118" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+<path class="ln" d="M352 68L340 118" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+<path class="ln" d="M101 176L160 212" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+<path class="ln" d="M319 176L260 212" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+<path class="ln" d="M140 276L106 392" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+<path class="ln" d="M280 276L314 392" marker-end="url(#arw)" marker-start="url(#arw)"></path>
+</svg>
+<figcaption class="caption">WhatsApp pela Evolution API, app e versão web pelo Caddy, API em FastAPI com PostgreSQL e Gemini.</figcaption>
+</figure>
+<h2>Destaques técnicos</h2>
+<ul>
+<li><strong>Sincronização offline:</strong> banco local criptografado (SQLCipher), fila de operações com idempotência, versão por registro e resolução de conflitos; o que não pôde ser aplicado aparece para a pessoa decidir em "Precisa da sua atenção".</li>
+<li><strong>Isolamento entre negócios (multi-tenant):</strong> cada consulta é limitada ao negócio e ao papel de quem pede (dono, recepção, barbeiro), com testes que tentam ler dados de outro negócio.</li>
+<li><strong>IA com limites:</strong> o agente só consulta o que o sistema expõe; horários, preços e regras vêm do cadastro, e gravar, cancelar ou remarcar passa por uma confirmação determinística do cliente.</li>
+<li><strong>Pix:</strong> cobrança com a chave do negócio (o dinheiro não passa pelo sistema), leitura do comprovante como pré-conferência e confirmação final pelo dono.</li>
+</ul>
+<h2>Testes e segurança</h2>
+<ul>
+<li>Testes automáticos de isolamento, injeção, validação de entrada, abuso, sessões com 2FA e refresh token rotativo, webhooks e exposição de configuração.</li>
+<li>Varredura de segredos nos pacotes publicados; o site do portfólio passa por uma verificação que barra chaves, ids internos, telefones e e-mails fora dos contatos.</li>
+<li>Direitos do titular (LGPD) pelo próprio WhatsApp, retenção automática de mensagens e comprovantes e cópia offline criptografada, apagada ao sair da conta.</li>
+</ul>
+<h2>Acessibilidade e desempenho do site</h2>
+<ul>
+<li>WCAG 2.2 AA como meta: contraste nos temas claro e escuro, alvos de toque de 44 px ou mais, foco visível e tudo utilizável pelo teclado, conferido com axe e Lighthouse.</li>
+<li>Site estático, sem framework e sem rastreamento: HTML, CSS e JavaScript puro, imagens em AVIF e WebP com tamanhos por largura de tela.</li>
+</ul>
+<p class="note">Código-fonte privado. Demonstração disponível mediante solicitação.</p><p><a href="https://github.com/souzza-matheus/klipper-site" rel="noopener" target="_blank">Repositório deste site</a></p>
+<p><a href="index.html#contato">Agendar demonstração ao vivo</a></p>
+</main>
+<footer class="footer">
+<div class="wrap">
+<p class="note">Projeto desenvolvido por Matheus Souza. Em fase de piloto: as telas e conversas usam dados fictícios.</p>
+</div>
+</footer>
+</body>
+</html>
