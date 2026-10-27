@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://souzza-matheus.github.io/klipper-site/sitemap.xml
